@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import logo from "@/assets/ravencourt-logo.png";
 
 export const Route = createFileRoute("/")({
   component: RavencourtPage,
@@ -51,8 +52,11 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-[var(--rule)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-12 h-16 flex items-center justify-between">
-        <a href="#top" className="font-serif text-lg tracking-wide text-[var(--ink)]">
-          Ravencourt <span className="text-[var(--bronze)]">Capital</span>
+        <a href="#top" className="flex items-center gap-3 text-[var(--ink)]">
+          <img src={logo} alt="Ravencourt Capital" className="h-9 w-9 object-contain" />
+          <span className="font-serif text-lg tracking-wide hidden sm:inline">
+            Ravencourt <span className="text-[var(--bronze)]">Capital</span>
+          </span>
         </a>
         <nav className="hidden md:flex items-center gap-10">
           {NAV.map((n) => (
