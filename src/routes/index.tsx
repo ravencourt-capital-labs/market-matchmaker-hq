@@ -123,7 +123,10 @@ function Hero() {
       </div>
       <div className="relative mx-auto max-w-7xl px-6 lg:px-12 w-full pt-24">
         <div className="max-w-3xl">
-          <p className="eyebrow mb-8 text-[var(--bronze-soft)]">Ravencourt Capital · Milan</p>
+          <div className="flex items-center gap-4 mb-10">
+            <img src={logo} alt="" className="h-12 w-12 object-contain" />
+            <p className="eyebrow text-[var(--bronze-soft)] !mb-0">Ravencourt Capital · Milan</p>
+          </div>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
             We find the right match across private markets.
           </h1>
