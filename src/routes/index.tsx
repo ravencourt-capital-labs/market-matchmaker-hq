@@ -349,7 +349,7 @@ function Geographies() {
     {
       t: "Europe",
       tag: "Primary market",
-      b: "Cross-border mandates across Western and Southern Europe with particular depth in Italy, France, Germany, Luxembourg, Greece, and the United Kingdom. Relationships span founder-led SMEs, mid-market sponsors, and institutional allocators.",
+      b: "Cross-border mandates across Western, Southern, and Northern Europe. Relationships span founder-led SMEs, mid-market sponsors, and institutional allocators.",
     },
     {
       t: "MENA",
