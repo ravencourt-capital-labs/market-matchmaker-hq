@@ -330,7 +330,7 @@ function FulfillmentOS() {
               key={l}
               className="border-l-2 border-[var(--bronze)] pl-6 py-4 flex items-start gap-6"
             >
-              <span className="font-serif text-[var(--bronze)] text-sm tracking-widest pt-1">
+              <span className="font-serif text-[var(--bronze)] text-3xl md:text-4xl leading-none pt-1 tabular-nums shrink-0 min-w-[2.5rem]">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <p className="text-[oklch(0.88_0.01_85)] leading-relaxed text-lg md:text-xl font-light">
