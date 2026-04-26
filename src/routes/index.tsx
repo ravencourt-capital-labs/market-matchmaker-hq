@@ -35,6 +35,18 @@ const TEAM = [
     title: "Senior Advisor, Legal and Cross-Border Structuring",
     linkedin: "https://lcopartners.eu/en/professionals/luciano-mazzola-en",
   },
+  {
+    initials: "KL",
+    name: "Konstantinos Lanaras",
+    title: "Intern — Investment Research & Partnerships · Politecnico di Milano, MSc Fintech, Finance & Digital Innovation",
+    linkedin: "",
+  },
+  {
+    initials: "JZ",
+    name: "Joey Zhu",
+    title: "Intern — Investment Research & Partnerships · NYU Stern, BSc Finance",
+    linkedin: "",
+  },
 ];
 
 function Header() {
