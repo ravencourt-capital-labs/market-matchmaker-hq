@@ -12,12 +12,12 @@ export const Route = createFileRoute("/")({
 
 const NAV = [
   { id: "about", label: "About" },
+  { id: "geographies", label: "Geographies" },
   { id: "buyside", label: "Buy-side & Sell-side" },
   { id: "capabilities", label: "Capabilities" },
   { id: "fulfillmentos", label: "FulfillmentOS" },
-  { id: "geographies", label: "Geographies" },
-  { id: "team", label: "Team" },
   { id: "metrics", label: "Metrics" },
+  { id: "team", label: "Team" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -677,12 +677,12 @@ function RavencourtPage() {
       <main>
         <Hero />
         <About />
+        <Geographies />
         <Advisory />
         <Capabilities />
         <FulfillmentOS />
-        <Geographies />
-        <Team />
         <Metrics />
+        <Team />
         <Contact />
       </main>
       <Footer />
