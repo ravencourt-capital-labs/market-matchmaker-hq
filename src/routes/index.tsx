@@ -522,7 +522,7 @@ function Team() {
                 href={m.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.18em] font-semibold text-[var(--ink)] mb-3 hover:text-[var(--bronze)] transition-colors"
+                className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.14em] font-semibold text-[var(--ink)] mb-3 hover:text-[var(--bronze)] transition-colors whitespace-nowrap"
               >
                 {m.name}
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -536,16 +536,6 @@ function Team() {
                 <p className="text-sm text-[var(--ink-soft)] leading-snug">
                   Based in <span className="font-semibold text-[var(--ink)]">{m.location}</span>
                 </p>
-              )}
-              {m.linkedin && (
-                <a
-                  href={m.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-block mt-4 text-xs uppercase tracking-[0.2em] text-[var(--bronze)] hover:text-[var(--ink)] transition-colors"
-                >
-                  LinkedIn →
-                </a>
               )}
             </div>
           ))}
