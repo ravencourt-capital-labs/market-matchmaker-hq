@@ -256,10 +256,6 @@ function Advisory() {
         />
         <div className="grid md:grid-cols-2 gap-px bg-[var(--rule)] border border-[var(--rule)]">
           <div className="bg-background p-10 lg:p-14">
-            <p className="eyebrow mb-6">Buy-side allocators</p>
-            <h3 className="font-serif text-2xl md:text-3xl text-[var(--ink)] mb-6">
-              For funds and investors
-            </h3>
             <p className="text-[var(--ink-soft)] leading-relaxed mb-8">
               We source and qualify opportunities against your mandate before they reach the open market.
             </p>
@@ -273,10 +269,6 @@ function Advisory() {
             </ul>
           </div>
           <div className="bg-background p-10 lg:p-14">
-            <p className="eyebrow mb-6">Sell-side managers, funds, and founders</p>
-            <h3 className="font-serif text-2xl md:text-3xl text-[var(--ink)] mb-6">
-              For founders, managers, and GPs
-            </h3>
             <p className="text-[var(--ink-soft)] leading-relaxed mb-8">
               We position and run the process — staying involved through execution, not just the opening conversation.
             </p>
