@@ -203,7 +203,7 @@ function SectionHeader({ eyebrow, title }: { eyebrow: string; title: string }) {
 
 function About() {
   return (
-    <section id="about" className="py-28 lg:py-36 border-b border-[var(--rule)]">
+    <section id="about" className="py-16 lg:py-20 border-b border-[var(--rule)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="About" title="A senior-led firm built for private markets." />
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
@@ -247,7 +247,7 @@ function Advisory() {
   return (
     <section
       id="buyside"
-      className="py-28 lg:py-36 border-b border-[var(--rule)] bg-[oklch(0.97_0.006_85)]"
+      className="py-16 lg:py-20 border-b border-[var(--rule)] bg-[oklch(0.97_0.006_85)]"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid md:grid-cols-2 gap-px bg-[var(--rule)] border border-[var(--rule)]">
@@ -307,7 +307,7 @@ function Capabilities() {
     },
   ];
   return (
-    <section id="capabilities" className="pt-28 lg:pt-36 border-b border-[var(--rule)]">
+    <section id="capabilities" className="pt-16 lg:pt-20 border-b border-[var(--rule)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="Execution capabilities" title="A focused mandate set." />
         <div className="border-t border-[var(--ink)]">
@@ -350,7 +350,7 @@ function _FulfillmentOS() {
   return (
     <section
       id="fulfillmentos"
-      className="py-28 lg:py-36 border-b border-[oklch(0.28_0.025_250)] bg-[var(--ink)] text-[oklch(0.95_0.008_85)]"
+      className="py-16 lg:py-20 border-b border-[oklch(0.28_0.025_250)] bg-[var(--ink)] text-[oklch(0.95_0.008_85)]"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="mb-14 max-w-4xl">
@@ -403,7 +403,7 @@ function Geographies() {
     },
   ];
   return (
-    <section id="geographies" className="py-28 lg:py-36 border-b border-[var(--rule)]">
+    <section id="geographies" className="py-16 lg:py-20 border-b border-[var(--rule)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="Geographies" title="Where we operate." />
         <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
@@ -425,7 +425,7 @@ function Team() {
   return (
     <section
       id="team"
-      className="py-28 lg:py-36 border-b border-[var(--rule)] bg-[oklch(0.97_0.006_85)]"
+      className="py-16 lg:py-20 border-b border-[var(--rule)] bg-[oklch(0.97_0.006_85)]"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="Team" title="Senior-led, by design." />
@@ -490,7 +490,7 @@ function Metrics() {
     "Execution governed through FulfillmentOS, ensuring consistency from mandate to outcome",
   ];
   return (
-    <section id="metrics" className="py-28 lg:py-36 border-b border-[var(--rule)]">
+    <section id="metrics" className="py-16 lg:py-20 border-b border-[var(--rule)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="Platform" title="Platform metrics & footprint." />
         <ul className="border-t border-[var(--ink)]">
@@ -516,7 +516,7 @@ function Metrics() {
 function Contact() {
   const [sent, setSent] = useState(false);
   return (
-    <section id="contact" className="bg-[var(--ink)] text-[oklch(0.95_0.008_85)] py-28 lg:py-36">
+    <section id="contact" className="bg-[var(--ink)] text-[oklch(0.95_0.008_85)] py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="max-w-3xl mb-16">
           <p className="eyebrow mb-4 text-[var(--bronze-soft)]">Contact</p>
