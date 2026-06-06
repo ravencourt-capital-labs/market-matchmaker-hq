@@ -537,16 +537,6 @@ function Team() {
                   Based in <span className="font-semibold text-[var(--ink)]">{m.location}</span>
                 </p>
               )}
-              {m.linkedin && (
-                <a
-                  href={m.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-block mt-4 text-xs uppercase tracking-[0.2em] text-[var(--bronze)] hover:text-[var(--ink)] transition-colors"
-                >
-                  LinkedIn →
-                </a>
-              )}
             </div>
           ))}
         </div>
