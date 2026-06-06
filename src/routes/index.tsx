@@ -631,6 +631,39 @@ function Team() {
   );
 }
 
+function Metrics() {
+  const items = [
+    "Cross-border execution across Europe, MENA, North America, and selected global markets",
+    "Senior-led delivery across capital formation, M&A, and buy-side advisory",
+    "Selective mandate intake with institutional filtration criteria",
+    "Transaction exposure ranging from early institutional rounds to €50M+ mid-market deals with allocators, family offices, strategic acquirers, and specialist GPs",
+    "Direct engagement with allocators, family offices, strategic acquirers and specialist GPs",
+    "Execution governed through FulfillmentOS, ensuring consistency from mandate to outcome",
+  ];
+  return (
+    <section id="metrics" className="py-28 lg:py-36 border-b border-[var(--rule)]">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+        <SectionHeader eyebrow="Platform" title="Platform metrics & footprint." />
+        <ul className="border-t border-[var(--ink)]">
+          {items.map((it, i) => (
+            <li
+              key={i}
+              className="grid md:grid-cols-12 gap-6 py-8 border-b border-[var(--rule)]"
+            >
+              <div className="md:col-span-1 font-serif text-[var(--bronze)] text-sm tracking-widest pt-1 tabular-nums">
+                {String(i + 1).padStart(2, "0")}
+              </div>
+              <p className="md:col-span-11 text-[var(--ink)] leading-relaxed text-base md:text-lg font-light">
+                {it}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
 function Contact() {
   const [sent, setSent] = useState(false);
   return (
