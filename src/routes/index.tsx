@@ -58,7 +58,7 @@ const TEAM = [
     name: "Joey Zhu",
     title: "FulfillmentOS & Data Pipeline Analyst",
     location: "New York",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/joey-zhu-7006a0318/",
     image: joeyImg.url,
     objectPosition: "50% 28%",
   },
