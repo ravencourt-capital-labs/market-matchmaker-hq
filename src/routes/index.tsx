@@ -8,8 +8,9 @@ export const Route = createFileRoute("/")({
 
 const NAV = [
   { id: "about", label: "About" },
-  { id: "advisory", label: "Advisory" },
+  { id: "buyside", label: "Buy-side & Sell-side" },
   { id: "capabilities", label: "Capabilities" },
+  { id: "allocators", label: "Allocators" },
   { id: "fulfillmentos", label: "FulfillmentOS" },
   { id: "geographies", label: "Geographies" },
   { id: "team", label: "Team" },
@@ -134,11 +135,11 @@ function Hero() {
             <p className="eyebrow text-[var(--bronze-soft)] !mb-0">Ravencourt Capital · Milan</p>
           </div>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.04] tracking-tight">
-            Private Markets Advisory. Capital Raising, M&amp;A, and Strategic Transactions.
+            Private Markets Execution. Capital Raising, M&amp;A, and Strategic Transactions.
           </h1>
           <p className="mt-10 text-lg md:text-xl text-[oklch(0.82_0.01_85)] font-light max-w-3xl leading-relaxed">
-            Ravencourt Capital is a Milan-based boutique advisory firm. We advise founders, fund
-            managers, and investors across capital raises, M&amp;A processes, and buy-side
+            Ravencourt Capital is a Milan-based private markets boutique. We work with founders,
+            fund managers, and investors across capital raises, M&amp;A processes, and buy-side
             mandates in Europe, MENA, and North America.
           </p>
           <div className="mt-12">
@@ -169,13 +170,20 @@ function About() {
   return (
     <section id="about" className="py-28 lg:py-36 border-b border-[var(--rule)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <SectionHeader eyebrow="About" title="A senior-led advisory firm built for private markets." />
-        <div className="max-w-4xl">
+        <SectionHeader eyebrow="About" title="A senior-led firm built for private markets." />
+        <div className="max-w-4xl space-y-6">
           <p className="text-[var(--ink-soft)] leading-relaxed text-base md:text-lg">
-            We work on the side of founders and investors who need more than an introduction. Our
-            engagements are structured around mandate clarity, execution discipline, and
-            counterparty fit. We do not take on mandates we cannot execute. All work is senior-led
-            from first conversation to close.
+            Ravencourt Capital is a Milan-based private markets boutique operating across Europe,
+            MENA, North America, and select global markets through a cross-border team in Milan,
+            Dubai, Luxembourg, and New York.
+          </p>
+          <p className="text-[var(--ink-soft)] leading-relaxed text-base md:text-lg">
+            We execute across capital formation, M&amp;A, and buy-side mandates with a focus on
+            entry discipline, transaction structure, and execution feasibility.
+          </p>
+          <p className="text-[var(--ink-soft)] leading-relaxed text-base md:text-lg">
+            All engagements run through a senior-led process built around mandate alignment,
+            institutional readiness, and outcome attribution.
           </p>
         </div>
       </div>
@@ -198,12 +206,12 @@ function Advisory() {
   ];
   return (
     <section
-      id="advisory"
+      id="buyside"
       className="py-28 lg:py-36 border-b border-[var(--rule)] bg-[oklch(0.97_0.006_85)]"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader
-          eyebrow="Buy-side and sell-side advisory"
+          eyebrow="Buy-side & Sell-side Execution"
           title="Two sides of the same conversation."
         />
         <div className="grid md:grid-cols-2 gap-px bg-[var(--rule)] border border-[var(--rule)]">
@@ -257,12 +265,12 @@ function Capabilities() {
   const items = [
     {
       t: "Capital formation and strategic positioning",
-      d: "Sell-side advisory across capital raises, secondary transactions, and strategic placements.",
+      d: "Sell-side execution across capital raises, secondary transactions, and strategic placements.",
       b: "Capital raising is executed through allocator-aligned positioning, where narrative, valuation, and structure are engineered to withstand institutional diligence. Positioning is stress-tested against the entry logic and return expectations of the target investor universe.",
     },
     {
       t: "M&A and strategic transactions",
-      d: "Advisory across founder-led and mid-market transactions from €2M to €50M.",
+      d: "Coverage across founder-led and mid-market transactions from €2M to €50M.",
       b: "We advise on transactions involving private equity, strategic acquirers, family offices, and search funds across Europe, MENA, and North America. Engagements are structured around valuation realism, buyer intent verification, and executable deal pathways.",
     },
     {
@@ -271,7 +279,7 @@ function Capabilities() {
       b: "Work is delivered as an extension of the investment team, with emphasis on downside protection and return visibility. Our approach replicates the scrutiny of an internal investment committee, not a third-party opinion.",
     },
     {
-      t: "Search fund and direct deal advisory",
+      t: "Search Fund & Direct Deal Execution",
       d: "Support for searchers and acquisition entrepreneurs across the full transaction lifecycle.",
       b: "We advise searchers and acquisition entrepreneurs on deal sourcing, target evaluation, and transaction structuring. Analysis focuses on cash-flow durability, debt capacity, and post-acquisition operational feasibility.",
     },
@@ -304,6 +312,86 @@ function Capabilities() {
 }
 
 function FulfillmentOS() {
+  return _FulfillmentOS();
+}
+
+function AllocatorCoverage() {
+  const groups = [
+    {
+      label: "Investor Type",
+      items: [
+        "Family Offices",
+        "Sovereign Wealth Funds",
+        "Pension Funds",
+        "Endowments",
+        "Fund of Funds",
+        "Private Banks",
+        "Corporate Investors",
+      ],
+    },
+    {
+      label: "Ticket Size",
+      items: ["€500K – €5M", "€5M – €25M", "€25M+"],
+    },
+    {
+      label: "Geography",
+      items: ["Western Europe", "MENA", "North America", "Asia-Pacific (selective)"],
+    },
+    {
+      label: "Asset Class",
+      items: [
+        "Private Equity",
+        "Private Credit",
+        "Real Assets",
+        "Venture & Growth",
+        "Infrastructure",
+      ],
+    },
+    {
+      label: "Decision Process",
+      items: ["Direct LP", "Consultant-Advised", "Committee-Driven"],
+    },
+    {
+      label: "Relationship Status",
+      items: ["Active Coverage", "Warm Introduction", "Strategic Development"],
+    },
+  ];
+  return (
+    <section id="allocators" className="py-28 lg:py-36 border-b border-[var(--rule)]">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+        <SectionHeader eyebrow="Allocator Coverage" title="Mapped, not just contacted." />
+        <div className="max-w-4xl mb-16">
+          <p className="text-[var(--ink-soft)] leading-relaxed text-base md:text-lg">
+            Ravencourt Capital maintains active relationships with a curated universe of
+            institutional allocators across our operating geographies. Coverage is mapped across
+            investor type, ticket size, asset-class mandate, and decision process — enabling
+            precise targeting for every mandate we execute.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
+          {groups.map((g) => (
+            <div key={g.label} className="bg-background p-8 lg:p-10">
+              <p className="eyebrow mb-5">{g.label}</p>
+              <ul className="space-y-2">
+                {g.items.map((it) => (
+                  <li
+                    key={it}
+                    className="flex gap-3 text-sm text-[var(--ink-soft)] leading-relaxed"
+                  >
+                    <span className="text-[var(--bronze)] mt-[0.55rem] h-px w-3 bg-[var(--bronze)] shrink-0" />
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function _FulfillmentOS() {
   const lines = [
     "Mandate-level alignment verified before any market engagement begins",
     "Investor-grade documentation and data integrity maintained throughout",
@@ -542,17 +630,40 @@ function Contact() {
 function Footer() {
   return (
     <footer className="bg-[var(--ink)] text-[oklch(0.7_0.01_85)] border-t border-[oklch(0.28_0.025_250)]">
-      <div className="mx-auto max-w-7xl px-6 lg:px-12 py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs tracking-wide">
-        <p>
-          Ravencourt Capital © 2025 · P.IVA 11381320966 · Milan, Italy ·{" "}
-          <a
-            href="mailto:contact@ravencourtcapital.com"
-            className="hover:text-[var(--bronze)] transition-colors"
-          >
-            contact@ravencourtcapital.com
-          </a>
-        </p>
-        <p className="text-[oklch(0.55_0.015_85)]">Private Markets Advisory</p>
+      <div className="mx-auto max-w-7xl px-6 lg:px-12 py-16">
+        <div className="max-w-4xl mb-12">
+          <p className="eyebrow mb-4 text-[var(--bronze-soft)]">Regulatory Framework</p>
+          <p className="text-[oklch(0.82_0.01_85)] leading-relaxed text-sm md:text-base font-light">
+            Ravencourt Capital operates as a private markets execution platform focused on capital
+            formation, M&amp;A, and buy-side mandates. In jurisdictions where capital placement,
+            securities promotion, or investment arrangement activity requires local authorization,
+            Ravencourt engages regulated partner firms holding the appropriate FCA, DFSA, FSRA, or
+            equivalent regulatory permissions.
+          </p>
+          <p className="mt-4 text-[oklch(0.82_0.01_85)] leading-relaxed text-sm md:text-base font-light">
+            This website is directed exclusively at professional clients and sophisticated
+            investors. It does not constitute an offer or solicitation to buy or sell securities
+            in any jurisdiction.
+          </p>
+        </div>
+        <div className="border-t border-[oklch(0.28_0.025_250)] pt-8 flex flex-col gap-3 text-xs tracking-wide">
+          <p className="uppercase tracking-[0.18em] text-[oklch(0.7_0.01_85)]">
+            Ravencourt Capital — Allocator-Aligned Private Markets Execution
+          </p>
+          <p className="text-[oklch(0.6_0.015_85)]">
+            Ravencourt Capital © 2025 · P.IVA 11381320966 · Milan, Italy ·{" "}
+            <a
+              href="mailto:contact@ravencourtcapital.com"
+              className="hover:text-[var(--bronze)] transition-colors"
+            >
+              contact@ravencourtcapital.com
+            </a>
+          </p>
+          <p className="text-[oklch(0.55_0.015_85)]">
+            For professional and institutional use only. Not for retail distribution. Ravencourt
+            Capital S.à r.l. | Luxembourg
+          </p>
+        </div>
       </div>
     </footer>
   );
@@ -567,6 +678,7 @@ function RavencourtPage() {
         <About />
         <Advisory />
         <Capabilities />
+        <AllocatorCoverage />
         <FulfillmentOS />
         <Geographies />
         <Team />

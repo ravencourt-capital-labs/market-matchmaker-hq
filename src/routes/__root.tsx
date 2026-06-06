@@ -29,21 +29,32 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ravencourt Capital — Private Markets Advisory" },
+      {
+        title:
+          "Ravencourt Capital | Allocator-Aligned Private Markets Execution Across Europe, MENA & North America",
+      },
       {
         name: "description",
         content:
-          "Milan-based boutique advisory firm specialising in capital formation, M&A, and buy-side engagement across Europe, MENA, and North America. Allocator-grade diligence and transaction execution.",
+          "Ravencourt Capital is a Milan-based private markets boutique executing capital formation, M&A, and buy-side mandates across Europe, MENA, and North America.",
       },
       { name: "author", content: "Ravencourt Capital" },
-      { property: "og:title", content: "Ravencourt Capital — Private Markets Advisory" },
+      {
+        property: "og:title",
+        content: "Ravencourt Capital – Private Markets Execution",
+      },
       {
         property: "og:description",
         content:
-          "Milan-based boutique advisory firm specialising in capital formation, M&A, and buy-side engagement across Europe, MENA, and North America.",
+          "Allocator-aligned, cross-border execution across private capital, M&A, and buy-side mandates.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:description",
+        content:
+          "Allocator-aligned, cross-border execution across private capital, M&A, and buy-side mandates.",
+      },
     ],
     links: [
       {
