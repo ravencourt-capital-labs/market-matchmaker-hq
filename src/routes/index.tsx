@@ -793,10 +793,10 @@ function RavencourtPage() {
         <About />
         <Advisory />
         <Capabilities />
-        <AllocatorCoverage />
         <FulfillmentOS />
         <Geographies />
         <Team />
+        <Metrics />
         <Contact />
       </main>
       <Footer />
