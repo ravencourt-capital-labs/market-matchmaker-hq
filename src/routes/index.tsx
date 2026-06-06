@@ -633,7 +633,6 @@ function Team() {
 
 function Contact() {
   const [sent, setSent] = useState(false);
-  void sent;
   return (
     <section id="contact" className="bg-[var(--ink)] text-[oklch(0.95_0.008_85)] py-28 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
