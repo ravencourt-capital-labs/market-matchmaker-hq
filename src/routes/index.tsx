@@ -14,10 +14,10 @@ const NAV = [
   { id: "about", label: "About" },
   { id: "buyside", label: "Buy-side & Sell-side" },
   { id: "capabilities", label: "Capabilities" },
-  { id: "allocators", label: "Allocators" },
   { id: "fulfillmentos", label: "FulfillmentOS" },
   { id: "geographies", label: "Geographies" },
   { id: "team", label: "Team" },
+  { id: "metrics", label: "Metrics" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -349,145 +349,6 @@ function FulfillmentOS() {
   return _FulfillmentOS();
 }
 
-function AllocatorExplorer({
-  groups,
-}: {
-  groups: { label: string; items: string[] }[];
-}) {
-  const [active, setActive] = useState<number | null>(0);
-  return (
-    <div className="border-t border-b border-[var(--rule)]">
-      {groups.map((g, i) => {
-        const isOpen = active === i;
-        return (
-          <div
-            key={g.label}
-            className={`border-b border-[var(--rule)] last:border-b-0 transition-colors ${
-              isOpen ? "bg-[oklch(0.98_0.005_85)]" : ""
-            }`}
-          >
-            <button
-              type="button"
-              onClick={() => setActive(isOpen ? null : i)}
-              aria-expanded={isOpen}
-              className="group w-full text-left px-6 lg:px-8 py-6 flex items-center justify-between gap-4"
-            >
-              <span className="flex items-center gap-6 min-w-0">
-                <span className="font-serif tabular-nums text-sm text-[var(--bronze)]">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="text-[13px] md:text-sm tracking-[0.1em] uppercase font-medium text-[var(--ink)]">
-                  {g.label}
-                </span>
-              </span>
-              <span className="flex items-center gap-5 text-[11px] tabular-nums shrink-0 text-[var(--ink-soft)]">
-                <span>{String(g.items.length).padStart(2, "0")}</span>
-                <span
-                  aria-hidden
-                  className={`relative inline-block h-px w-6 bg-[var(--rule)] group-hover:bg-[var(--bronze)] transition-colors`}
-                >
-                  <span
-                    className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-3 w-px bg-[var(--ink-soft)] group-hover:bg-[var(--bronze)] transition-all ${
-                      isOpen ? "scale-y-0" : "scale-y-100"
-                    }`}
-                  />
-                </span>
-              </span>
-            </button>
-            <div
-              className={`grid transition-all duration-500 ease-out ${
-                isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-              }`}
-            >
-              <div className="overflow-hidden">
-                <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-1 px-6 lg:px-8 pb-8 pt-2">
-                  {g.items.map((it, j) => (
-                    <li
-                      key={it}
-                      className="group flex items-center justify-between gap-4 py-3 border-b border-[var(--rule)]/60 hover:border-[var(--bronze)] transition-colors"
-                    >
-                      <span className="flex items-center gap-4 min-w-0">
-                        <span className="font-serif text-xs text-[var(--ink-soft)] tabular-nums group-hover:text-[var(--bronze)] transition-colors">
-                          {String(j + 1).padStart(2, "0")}
-                        </span>
-                        <span className="text-sm md:text-[15px] text-[var(--ink)] leading-snug">
-                          {it}
-                        </span>
-                      </span>
-                      <span
-                        aria-hidden
-                        className="h-px w-4 bg-[var(--rule)] group-hover:w-8 group-hover:bg-[var(--bronze)] transition-all"
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-function AllocatorCoverage() {
-  const groups = [
-    {
-      label: "Investor Type",
-      items: [
-        "Family Offices",
-        "Sovereign Wealth Funds",
-        "Pension Funds",
-        "Endowments",
-        "Fund of Funds",
-        "Private Banks",
-        "Corporate Investors",
-      ],
-    },
-    {
-      label: "Ticket Size",
-      items: ["€500K – €5M", "€5M – €25M", "€25M+"],
-    },
-    {
-      label: "Geography",
-      items: ["Western Europe", "MENA", "North America", "Asia-Pacific (selective)"],
-    },
-    {
-      label: "Asset Class",
-      items: [
-        "Private Equity",
-        "Private Credit",
-        "Real Assets",
-        "Venture & Growth",
-        "Infrastructure",
-      ],
-    },
-    {
-      label: "Decision Process",
-      items: ["Direct LP", "Consultant-Advised", "Committee-Driven"],
-    },
-    {
-      label: "Relationship Status",
-      items: ["Active Coverage", "Warm Introduction", "Strategic Development"],
-    },
-  ];
-  return (
-    <section id="allocators" className="py-28 lg:py-36 border-b border-[var(--rule)]">
-      <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <SectionHeader eyebrow="Allocator Coverage" title="Mapped, not just contacted." />
-        <div className="max-w-4xl mb-16">
-          <p className="text-[var(--ink-soft)] leading-relaxed text-base md:text-lg">
-            Ravencourt Capital maintains active relationships with a curated universe of
-            institutional allocators across our operating geographies. Coverage is mapped across
-            investor type, ticket size, asset-class mandate, and decision process — enabling
-            precise targeting for every mandate we execute.
-          </p>
-        </div>
-        <AllocatorExplorer groups={groups} />
-      </div>
-    </section>
-  );
-}
 
 function _FulfillmentOS() {
   const lines = [
@@ -626,6 +487,39 @@ function Team() {
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+function Metrics() {
+  const items = [
+    "Cross-border execution across Europe, MENA, North America, and selected global markets",
+    "Senior-led delivery across capital formation, M&A, and buy-side advisory",
+    "Selective mandate intake with institutional filtration criteria",
+    "Transaction exposure ranging from early institutional rounds to €50M+ mid-market deals with allocators, family offices, strategic acquirers, and specialist GPs",
+    "Direct engagement with allocators, family offices, strategic acquirers and specialist GPs",
+    "Execution governed through FulfillmentOS, ensuring consistency from mandate to outcome",
+  ];
+  return (
+    <section id="metrics" className="py-28 lg:py-36 border-b border-[var(--rule)]">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+        <SectionHeader eyebrow="Platform" title="Platform metrics & footprint." />
+        <ul className="border-t border-[var(--ink)]">
+          {items.map((it, i) => (
+            <li
+              key={i}
+              className="grid md:grid-cols-12 gap-6 py-8 border-b border-[var(--rule)]"
+            >
+              <div className="md:col-span-1 font-serif text-[var(--bronze)] text-sm tracking-widest pt-1 tabular-nums">
+                {String(i + 1).padStart(2, "0")}
+              </div>
+              <p className="md:col-span-11 text-[var(--ink)] leading-relaxed text-base md:text-lg font-light">
+                {it}
+              </p>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -793,10 +687,10 @@ function RavencourtPage() {
         <About />
         <Advisory />
         <Capabilities />
-        <AllocatorCoverage />
         <FulfillmentOS />
         <Geographies />
         <Team />
+        <Metrics />
         <Contact />
       </main>
       <Footer />
