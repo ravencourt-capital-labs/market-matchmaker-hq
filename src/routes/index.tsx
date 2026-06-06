@@ -14,10 +14,10 @@ const NAV = [
   { id: "about", label: "About" },
   { id: "buyside", label: "Buy-side & Sell-side" },
   { id: "capabilities", label: "Capabilities" },
-  { id: "allocators", label: "Allocators" },
   { id: "fulfillmentos", label: "FulfillmentOS" },
   { id: "geographies", label: "Geographies" },
   { id: "team", label: "Team" },
+  { id: "metrics", label: "Metrics" },
   { id: "contact", label: "Contact" },
 ];
 
