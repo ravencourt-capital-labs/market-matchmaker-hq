@@ -312,6 +312,86 @@ function Capabilities() {
 }
 
 function FulfillmentOS() {
+  return _FulfillmentOS();
+}
+
+function AllocatorCoverage() {
+  const groups = [
+    {
+      label: "Investor Type",
+      items: [
+        "Family Offices",
+        "Sovereign Wealth Funds",
+        "Pension Funds",
+        "Endowments",
+        "Fund of Funds",
+        "Private Banks",
+        "Corporate Investors",
+      ],
+    },
+    {
+      label: "Ticket Size",
+      items: ["€500K – €5M", "€5M – €25M", "€25M+"],
+    },
+    {
+      label: "Geography",
+      items: ["Western Europe", "MENA", "North America", "Asia-Pacific (selective)"],
+    },
+    {
+      label: "Asset Class",
+      items: [
+        "Private Equity",
+        "Private Credit",
+        "Real Assets",
+        "Venture & Growth",
+        "Infrastructure",
+      ],
+    },
+    {
+      label: "Decision Process",
+      items: ["Direct LP", "Consultant-Advised", "Committee-Driven"],
+    },
+    {
+      label: "Relationship Status",
+      items: ["Active Coverage", "Warm Introduction", "Strategic Development"],
+    },
+  ];
+  return (
+    <section id="allocators" className="py-28 lg:py-36 border-b border-[var(--rule)]">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+        <SectionHeader eyebrow="Allocator Coverage" title="Mapped, not just contacted." />
+        <div className="max-w-4xl mb-16">
+          <p className="text-[var(--ink-soft)] leading-relaxed text-base md:text-lg">
+            Ravencourt Capital maintains active relationships with a curated universe of
+            institutional allocators across our operating geographies. Coverage is mapped across
+            investor type, ticket size, asset-class mandate, and decision process — enabling
+            precise targeting for every mandate we execute.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
+          {groups.map((g) => (
+            <div key={g.label} className="bg-background p-8 lg:p-10">
+              <p className="eyebrow mb-5">{g.label}</p>
+              <ul className="space-y-2">
+                {g.items.map((it) => (
+                  <li
+                    key={it}
+                    className="flex gap-3 text-sm text-[var(--ink-soft)] leading-relaxed"
+                  >
+                    <span className="text-[var(--bronze)] mt-[0.55rem] h-px w-3 bg-[var(--bronze)] shrink-0" />
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function _FulfillmentOS() {
   const lines = [
     "Mandate-level alignment verified before any market engagement begins",
     "Investor-grade documentation and data integrity maintained throughout",
