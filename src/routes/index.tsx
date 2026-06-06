@@ -496,15 +496,12 @@ function Team() {
             <div
               key={m.name}
               className={`text-center px-4 ${
-                i === 3 ? "md:col-start-1 lg:col-start-1" : ""
-              } ${i === 3 ? "md:col-start-1" : ""}`}
-              style={
                 i === 3
-                  ? { gridColumnStart: 1 }
+                  ? "md:col-start-1 md:justify-self-end lg:pr-8"
                   : i === 4
-                  ? { gridColumnStart: 3 }
-                  : undefined
-              }
+                  ? "md:col-start-3 md:justify-self-start lg:pl-8"
+                  : ""
+              }`}
             >
               <div className="mx-auto w-40 h-40 bg-[var(--ink)] text-[oklch(0.95_0.008_85)] flex items-center justify-center font-serif text-3xl tracking-wider border border-[var(--bronze)]/40 mb-6 overflow-hidden">
                 {m.image ? (
