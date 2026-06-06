@@ -132,11 +132,11 @@ function Hero() {
         <img
           src={milanHero.url}
           alt="Milan skyline at dusk"
-          className="w-full h-full object-cover opacity-55"
+          className="w-full h-full object-cover opacity-90"
           width={1920}
           height={1280}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--ink)]/90 via-[var(--ink)]/40 to-[var(--ink)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--ink)]/70 via-[var(--ink)]/55 to-[var(--ink)]" />
       </div>
 
       {/* Centered hero content */}
