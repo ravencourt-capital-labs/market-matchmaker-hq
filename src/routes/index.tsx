@@ -670,7 +670,11 @@ function Contact() {
             </div>
             <div>
               <p className="eyebrow mb-2 text-[var(--bronze-soft)]">Office</p>
-              <p className="text-lg">Milan, Italy</p>
+              <p className="text-lg leading-relaxed">
+                Via Carlo Imbonati, 62/2
+                <br />
+                20159 Milano, Italy
+              </p>
             </div>
             <div className="pt-4">
               <a
