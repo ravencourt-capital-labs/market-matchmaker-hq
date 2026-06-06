@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import logo from "@/assets/ravencourt-logo.png";
+import lucianoImg from "@/assets/luciano.jpg.asset.json";
+import joeyImg from "@/assets/joey.jpg.asset.json";
+import saaniaImg from "@/assets/saania.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: RavencourtPage,
@@ -31,6 +34,8 @@ const TEAM = [
     title: "Cross-border structuring advisor",
     location: "Milan, Italy",
     linkedin: "https://lcopartners.eu/en/professionals/luciano-mazzola-en",
+    image: lucianoImg.url,
+    objectPosition: "50% 22%",
   },
   {
     initials: "SS",
@@ -38,6 +43,8 @@ const TEAM = [
     title: "Partnerships & Operations Director",
     location: "Dubai, UAE",
     linkedin: "https://linkedin.com/in/sanian",
+    image: saaniaImg.url,
+    objectPosition: "50% 26%",
   },
   {
     initials: "KL",
@@ -52,6 +59,8 @@ const TEAM = [
     title: "FulfillmentOS & Data Pipeline Analyst",
     location: "New York",
     linkedin: "",
+    image: joeyImg.url,
+    objectPosition: "50% 28%",
   },
 ];
 
@@ -497,8 +506,17 @@ function Team() {
                   : undefined
               }
             >
-              <div className="mx-auto w-40 h-40 bg-[var(--ink)] text-[oklch(0.95_0.008_85)] flex items-center justify-center font-serif text-3xl tracking-wider border border-[var(--bronze)]/40 mb-6">
-                {m.initials}
+              <div className="mx-auto w-40 h-40 bg-[var(--ink)] text-[oklch(0.95_0.008_85)] flex items-center justify-center font-serif text-3xl tracking-wider border border-[var(--bronze)]/40 mb-6 overflow-hidden">
+                {m.image ? (
+                  <img
+                    src={m.image}
+                    alt={m.name}
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: m.objectPosition ?? "50% 25%" }}
+                  />
+                ) : (
+                  m.initials
+                )}
               </div>
               <h3 className="text-sm uppercase tracking-[0.18em] font-semibold text-[var(--ink)] mb-3">
                 {m.name}
