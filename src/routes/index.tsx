@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import logo from "@/assets/ravencourt-logo.png";
 import lucianoImg from "@/assets/luciano.jpg.asset.json";
+import konstantinosImg from "@/assets/konstantinos.jpeg.asset.json";
 import joeyImg from "@/assets/joey.jpg.asset.json";
 import saaniaImg from "@/assets/saania.jpg.asset.json";
 import milanHero from "@/assets/milan-hero.jpg.asset.json";
@@ -49,7 +50,7 @@ const TEAM = [
     title: "Legal and Cross-Border Structuring Advisor",
     linkedin: "https://lcopartners.eu/en/professionals/luciano-mazzola-en",
     image: lucianoImg.url,
-    objectPosition: "50% 38%",
+    objectPosition: "50% 30%",
   },
   {
     initials: "SS",
@@ -64,6 +65,8 @@ const TEAM = [
     name: "Konstantinos Lanaras",
     title: "Private Markets Coverage Analyst",
     linkedin: "https://www.linkedin.com/in/konstantinoslanaras0504/",
+    image: konstantinosImg.url,
+    objectPosition: "50% 30%",
   },
   {
     initials: "JZ",
