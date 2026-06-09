@@ -96,9 +96,9 @@ function Header() {
           <div className="flex items-center gap-6 lg:gap-10">
             <a
               href="#contact"
-              className="hidden sm:inline-flex text-[11px] uppercase tracking-[0.18em] border border-[var(--ink)] text-[var(--ink)] px-4 py-2 hover:bg-[var(--ink)] hover:text-background transition-colors"
+              className="hidden sm:inline-flex text-[11px] uppercase tracking-[0.18em] bg-[var(--ink)] border border-[var(--ink)] text-background px-4 py-2 hover:bg-transparent hover:text-[var(--ink)] transition-colors"
             >
-              Start a conversation
+              Make an Enquiry
             </a>
             <button
               onClick={() => setOpen(true)}
