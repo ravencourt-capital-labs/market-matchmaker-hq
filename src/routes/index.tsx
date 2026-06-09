@@ -359,9 +359,6 @@ function Intelligence() {
               <p className="text-sm text-[var(--ink-soft)] leading-relaxed opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500">
                 {d}
               </p>
-              <p className="text-sm text-[var(--ink-soft)] leading-relaxed group-hover:hidden">
-                Hover to expand.
-              </p>
             </div>
           ))}
         </div>
