@@ -96,9 +96,9 @@ function Header() {
           <div className="flex items-center gap-6 lg:gap-10">
             <a
               href="#contact"
-              className="hidden sm:inline-flex text-[11px] uppercase tracking-[0.18em] border border-[var(--ink)] text-[var(--ink)] px-4 py-2 hover:bg-[var(--ink)] hover:text-background transition-colors"
+              className="hidden sm:inline-flex text-[11px] uppercase tracking-[0.18em] bg-[var(--ink)] border border-[var(--ink)] text-background px-4 py-2 hover:bg-transparent hover:text-[var(--ink)] transition-colors"
             >
-              Start a conversation
+              Make an Enquiry
             </a>
             <button
               onClick={() => setOpen(true)}
@@ -179,7 +179,7 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--ink)]/75 via-[var(--ink)]/60 to-[var(--ink)]" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-12 w-full pt-28 pb-24 flex flex-col items-start text-left">
+      <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-12 w-full pt-28 pb-32 flex flex-col items-start text-left">
         <div className="flex items-center gap-4 mb-10">
           <img src={logo} alt="" className="h-12 w-12 object-contain" />
           <p className="eyebrow text-[var(--bronze-soft)] !mb-0">Ravencourt Capital · Milan</p>
@@ -193,22 +193,31 @@ function Hero() {
           companies, private funds, strategic transactions, M&amp;A processes, investor readiness,
           and buy-side diligence across Europe, MENA, North America, and select global markets.
         </p>
-        <div className="mt-12 flex flex-col sm:flex-row gap-4">
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center gap-3 bg-[var(--bronze)] border border-[var(--bronze)] text-[var(--ink)] px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-transparent hover:text-[var(--bronze)] transition-colors"
-          >
-            Start a confidential conversation
-            <span aria-hidden>→</span>
-          </a>
-          <a
-            href="#method"
-            className="inline-flex items-center justify-center gap-3 border border-white/40 text-white/90 px-8 py-4 text-xs uppercase tracking-[0.2em] hover:border-[var(--bronze)] hover:text-[var(--bronze)] transition-colors"
-          >
-            Our approach
-          </a>
-        </div>
       </div>
+
+      <nav className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/15">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <ul className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 py-5">
+            {[
+              { id: "what-we-do", label: "Mandates" },
+              { id: "method", label: "Approach" },
+              { id: "intelligence", label: "Intelligence" },
+              { id: "footprint", label: "Footprint" },
+              { id: "team", label: "Team" },
+              { id: "contact", label: "Contact" },
+            ].map((s) => (
+              <li key={s.id}>
+                <a
+                  href={`#${s.id}`}
+                  className="text-[10px] uppercase tracking-[0.32em] text-white/70 hover:text-[var(--bronze)] transition-colors"
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
     </section>
   );
 }
@@ -349,9 +358,6 @@ function Intelligence() {
               <h3 className="font-serif text-xl text-[var(--ink)] leading-snug mb-3">{t}</h3>
               <p className="text-sm text-[var(--ink-soft)] leading-relaxed opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500">
                 {d}
-              </p>
-              <p className="text-sm text-[var(--ink-soft)] leading-relaxed group-hover:hidden">
-                Hover to expand.
               </p>
             </div>
           ))}
@@ -555,7 +561,7 @@ function Contact() {
         <div className="max-w-3xl mb-14">
           <p className="eyebrow mb-4 text-[var(--bronze-soft)]">Contact</p>
           <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-            Start a Confidential Conversation
+            Make an Enquiry
           </h2>
           <p className="mt-6 text-lg text-[oklch(0.82_0.01_85)] font-light leading-relaxed">
             All enquiries are treated with strict confidentiality. Select the description that
@@ -586,7 +592,7 @@ function Contact() {
               href={selectedTile.url}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-3 border border-[var(--bronze)] text-[var(--bronze)] px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-[var(--bronze)] hover:text-[var(--ink)] transition-colors"
+              className="inline-flex items-center gap-3 border border-white text-white px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-[var(--ink)] transition-colors"
             >
               Book a call — {selectedTile.label}
               <span aria-hidden>→</span>
@@ -651,7 +657,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="mt-4 inline-flex items-center gap-3 border border-[var(--bronze)] text-[var(--bronze)] px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-[var(--bronze)] hover:text-[var(--ink)] transition-colors"
+              className="mt-4 inline-flex items-center gap-3 border border-white text-white px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-[var(--ink)] transition-colors"
             >
               {sent ? "Enquiry submitted" : "Submit enquiry"}
               <span aria-hidden>→</span>
