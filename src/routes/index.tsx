@@ -91,13 +91,13 @@ function Header() {
           <a href="#top" className="flex items-center gap-3 text-[var(--ink)]">
             <img src={logo} alt="Ravencourt Capital" className="h-9 w-9 object-contain" />
             <span className="font-serif text-lg tracking-wide hidden sm:inline">
-              Ravencourt <span className="text-[var(--bronze)]">Capital</span>
+              Ravencourt <span className="text-[var(--ink)]">Capital</span>
             </span>
           </a>
           <div className="flex items-center gap-6 lg:gap-10">
             <a
               href="#contact"
-              className="hidden sm:inline-flex text-[11px] uppercase tracking-[0.18em] bg-[var(--bronze)] border border-[var(--bronze)] text-[var(--ink)] px-4 py-2 hover:bg-transparent hover:text-[var(--bronze)] transition-colors"
+              className="hidden sm:inline-flex text-[11px] uppercase tracking-[0.18em] bg-[var(--ink)] border border-[var(--ink)] text-white px-4 py-2 hover:bg-transparent hover:text-[var(--ink)] transition-colors"
             >
               Make an Enquiry
             </a>
@@ -106,7 +106,7 @@ function Header() {
               aria-label="Open menu"
               className="group flex items-center gap-4"
             >
-              <Menu className="w-6 h-6 text-[var(--ink)] group-hover:text-[var(--bronze)] transition-colors" strokeWidth={1.5} />
+              <Menu className="w-6 h-6 text-[var(--ink)] group-hover:text-[var(--ink-soft)] transition-colors" strokeWidth={1.5} />
             </button>
           </div>
         </div>
