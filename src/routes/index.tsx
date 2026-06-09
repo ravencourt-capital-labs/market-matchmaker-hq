@@ -50,7 +50,7 @@ const TEAM = [
     title: "Legal and Cross-Border Structuring Advisor",
     linkedin: "https://lcopartners.eu/en/professionals/luciano-mazzola-en",
     image: lucianoImg.url,
-    objectPosition: "50% 30%",
+    objectPosition: "50% 50%",
   },
   {
     initials: "SS",
