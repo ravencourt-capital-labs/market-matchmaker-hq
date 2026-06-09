@@ -524,10 +524,6 @@ const CONTACT_TILES = [
     url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
   },
   {
-    label: "Private Fund or GP",
-    url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
-  },
-  {
     label: "M&A or Strategic Transaction",
     url: "https://cal.com/team/ravencourt-capital/m-a-advisory-founder-led-sme-sale-strategic-transaction",
   },
@@ -561,7 +557,7 @@ function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10">
           {CONTACT_TILES.map((t) => (
             <button
               key={t.label}
