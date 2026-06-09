@@ -524,10 +524,6 @@ const CONTACT_TILES = [
     url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
   },
   {
-    label: "Private Fund or GP",
-    url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
-  },
-  {
     label: "M&A or Strategic Transaction",
     url: "https://cal.com/team/ravencourt-capital/m-a-advisory-founder-led-sme-sale-strategic-transaction",
   },
