@@ -561,7 +561,7 @@ function Contact() {
         <div className="max-w-3xl mb-14">
           <p className="eyebrow mb-4 text-[var(--bronze-soft)]">Contact</p>
           <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-            Start a Confidential Conversation
+            Make an Enquiry
           </h2>
           <p className="mt-6 text-lg text-[oklch(0.82_0.01_85)] font-light leading-relaxed">
             All enquiries are treated with strict confidentiality. Select the description that
@@ -592,7 +592,7 @@ function Contact() {
               href={selectedTile.url}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-3 border border-[var(--bronze)] text-[var(--bronze)] px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-[var(--bronze)] hover:text-[var(--ink)] transition-colors"
+              className="inline-flex items-center gap-3 border border-white text-white px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-[var(--ink)] transition-colors"
             >
               Book a call — {selectedTile.label}
               <span aria-hidden>→</span>
@@ -657,7 +657,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="mt-4 inline-flex items-center gap-3 border border-[var(--bronze)] text-[var(--bronze)] px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-[var(--bronze)] hover:text-[var(--ink)] transition-colors"
+              className="mt-4 inline-flex items-center gap-3 border border-white text-white px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-[var(--ink)] transition-colors"
             >
               {sent ? "Enquiry submitted" : "Submit enquiry"}
               <span aria-hidden>→</span>
