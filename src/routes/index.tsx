@@ -97,22 +97,16 @@ function Header() {
           <div className="flex items-center gap-6 lg:gap-10">
             <a
               href="#contact"
-              className="hidden sm:inline-flex text-[11px] uppercase tracking-[0.18em] bg-[var(--ink)] border border-[var(--ink)] text-background px-4 py-2 hover:bg-transparent hover:text-[var(--ink)] transition-colors"
+              className="hidden sm:inline-flex text-[11px] uppercase tracking-[0.18em] bg-[var(--bronze)] border border-[var(--bronze)] text-[var(--ink)] px-4 py-2 hover:bg-transparent hover:text-[var(--bronze)] transition-colors"
             >
               Make an Enquiry
             </a>
             <button
               onClick={() => setOpen(true)}
-              aria-label="Open index"
+              aria-label="Open menu"
               className="group flex items-center gap-4"
             >
-              <span className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] group-hover:text-[var(--bronze)] transition-colors">
-                Index
-              </span>
-              <span className="flex flex-col gap-1.5">
-                <span className="block h-px w-7 bg-[var(--ink)] group-hover:bg-[var(--bronze)] transition-colors" />
-                <span className="block h-px w-4 ml-auto bg-[var(--ink)] group-hover:bg-[var(--bronze)] transition-colors" />
-              </span>
+              <Menu className="w-6 h-6 text-[var(--ink)] group-hover:text-[var(--bronze)] transition-colors" strokeWidth={1.5} />
             </button>
           </div>
         </div>
