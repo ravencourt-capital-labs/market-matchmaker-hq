@@ -2,15 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, ArrowLeft, ArrowRight } from "lucide-react";
 import logo from "@/assets/ravencourt-logo.png";
-import lucianoImg from "@/assets/luciano.jpg.asset.json";
-import konstantinosImg from "@/assets/konstantinos.jpeg.asset.json";
-import joeyImg from "@/assets/joey.jpg.asset.json";
-import saaniaImg from "@/assets/saania.jpg.asset.json";
-import rohanImg from "@/assets/rohan.png.asset.json";
-import milanHero from "@/assets/milan-hero.jpg.asset.json";
-import corridorImg from "@/assets/corridor.png.asset.json";
-import deltaImg from "@/assets/delta.png.asset.json";
-import boardroomImg from "@/assets/boardroom.png.asset.json";
+
+const lucianoImg = { url: "/images/luciano.jpg" };
+const konstantinosImg = { url: "/images/konstantinos.jpeg" };
+const joeyImg = { url: "/images/joey.jpg" };
+const saaniaImg = { url: "/images/saania.jpg" };
+const rohanImg = { url: "/images/rohan.jpg" };
+const milanHero = { url: "/images/milan-hero.jpg" };
+const corridorImg = { url: "/images/corridor.jpg" };
+const deltaImg = { url: "/images/delta.jpg" };
+const boardroomImg = { url: "/images/boardroom.jpg" };
 
 export const Route = createFileRoute("/")({
   component: RavencourtPage,
