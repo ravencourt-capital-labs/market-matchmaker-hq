@@ -6,4 +6,7 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+export default defineConfig({
+  // Deploy target: Vercel (Nitro's vercel preset emits .vercel/output)
+  nitro: { preset: "vercel" },
+});
