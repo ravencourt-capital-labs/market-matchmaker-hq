@@ -43,7 +43,8 @@ const TEAM = [
   {
     initials: "RK",
     name: "Rohan Kapoor",
-    title: "Founder & Principal · Milan, Italy",
+    role: "Founder & Principal",
+    location: "Milan, Italy",
     linkedin: "https://linkedin.com/in/raisingcapitalcontact",
     image: rohanImg.url,
     objectPosition: "50% 25%",
@@ -51,7 +52,8 @@ const TEAM = [
   {
     initials: "LM",
     name: "Dr. Luciano Mazzola",
-    title: "Legal & Cross-Border Structuring Advisor · Milan, Italy",
+    role: "Legal & Cross-Border Structuring Advisor",
+    location: "Milan, Italy",
     linkedin: "https://lcopartners.eu/en/professionals/luciano-mazzola-en",
     image: lucianoImg.url,
     objectPosition: "50% 5%",
@@ -59,7 +61,8 @@ const TEAM = [
   {
     initials: "SS",
     name: "Sania Shaikh",
-    title: "Partnerships & Operations Director · Remote / Cross-border",
+    role: "Partnerships & Operations Director",
+    location: "Remote / Cross-border",
     linkedin: "https://linkedin.com/in/sanian",
     image: saaniaImg.url,
     objectPosition: "50% 26%",
@@ -67,7 +70,8 @@ const TEAM = [
   {
     initials: "KL",
     name: "Konstantinos Lanaras",
-    title: "Private Markets Coverage Analyst · Remote / Europe",
+    role: "Private Markets Coverage Analyst",
+    location: "Remote / Europe",
     linkedin: "https://www.linkedin.com/in/konstantinoslanaras0504/",
     image: konstantinosImg.url,
     objectPosition: "50% 50%",
@@ -75,7 +79,8 @@ const TEAM = [
   {
     initials: "JZ",
     name: "Joey Zhu",
-    title: "FulfillmentOS & Data Pipeline Analyst · Remote / Global",
+    role: "FulfillmentOS & Data Pipeline Analyst",
+    location: "Remote / Global",
     linkedin: "https://www.linkedin.com/in/joey-zhu-7006a0318/",
     image: joeyImg.url,
     objectPosition: "50% 28%",
@@ -532,8 +537,11 @@ function TeamCard({ m }: { m: typeof TEAM[number] }) {
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
-              <p className="text-sm text-[var(--ink-soft)] leading-snug max-w-xs mx-auto">
-                {m.title}
+              <p className="text-sm text-[var(--ink)] font-medium leading-snug max-w-xs mx-auto">
+                {m.role}
+              </p>
+              <p className="text-xs text-[var(--ink-soft)] leading-snug max-w-xs mx-auto mt-1 uppercase tracking-wider">
+                {m.location}
               </p>
             </div>
   );
