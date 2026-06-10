@@ -641,27 +641,6 @@ function Contact() {
           ))}
         </div>
 
-        <div className="mb-14">
-          {selectedTile ? (
-            <a
-              href={selectedTile.url}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-3 border border-white text-white px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-[var(--ink)] transition-colors"
-            >
-              Book a call — {selectedTile.label}
-              <span aria-hidden>→</span>
-            </a>
-          ) : (
-            <button
-              disabled
-              className="inline-flex items-center gap-3 border border-white/20 text-white/40 px-8 py-4 text-xs uppercase tracking-[0.2em] cursor-not-allowed"
-            >
-              Select a pathway above
-            </button>
-          )}
-        </div>
-
         <div className="grid md:grid-cols-2 gap-16">
           <form
             onSubmit={(e) => {
@@ -717,6 +696,26 @@ function Contact() {
               {sent ? "Enquiry submitted" : "Submit enquiry"}
               <span aria-hidden>→</span>
             </button>
+            <div>
+              {selectedTile ? (
+                <a
+                  href={selectedTile.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-3 border border-white text-white px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-[var(--ink)] transition-colors"
+                >
+                  Book a call — {selectedTile.label}
+                  <span aria-hidden>→</span>
+                </a>
+              ) : (
+                <button
+                  disabled
+                  className="inline-flex items-center gap-3 border border-white/20 text-white/40 px-8 py-4 text-xs uppercase tracking-[0.2em] cursor-not-allowed"
+                >
+                  Select a pathway to book a call
+                </button>
+              )}
+            </div>
           </form>
 
           <div className="space-y-8">
