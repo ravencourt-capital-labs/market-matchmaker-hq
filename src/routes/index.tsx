@@ -43,7 +43,7 @@ const TEAM = [
   {
     initials: "RK",
     name: "Rohan Kapoor",
-    title: "Founder and Principal",
+    title: "Founder & Principal · Milan, Italy. Rohan leads Ravencourt Capital's advisory execution, mandate evaluation, client discussions, strategic positioning, commercial structuring, and private-markets engagement process.",
     linkedin: "https://linkedin.com/in/raisingcapitalcontact",
     image: rohanImg.url,
     objectPosition: "50% 25%",
@@ -51,15 +51,15 @@ const TEAM = [
   {
     initials: "LM",
     name: "Dr. Luciano Mazzola",
-    title: "Legal and Cross-Border Structuring Advisor",
+    title: "Legal & Cross-Border Structuring Advisor · Milan, Italy. Dr. Mazzola supports Ravencourt on legal and cross-border structuring considerations, including selected jurisdictional, governance, and transaction-related matters.",
     linkedin: "https://lcopartners.eu/en/professionals/luciano-mazzola-en",
     image: lucianoImg.url,
     objectPosition: "50% 5%",
   },
   {
     initials: "SS",
-    name: "Sania",
-    title: "Partnerships and Operations Director",
+    name: "Sania Shaikh",
+    title: "Partnerships & Operations Director · Remote / Cross-border. Sania supports Ravencourt across partnerships, outreach coordination, client communication, CRM discipline, documentation flow, onboarding, and internal operating processes.",
     linkedin: "https://linkedin.com/in/sanian",
     image: saaniaImg.url,
     objectPosition: "50% 26%",
@@ -67,7 +67,7 @@ const TEAM = [
   {
     initials: "KL",
     name: "Konstantinos Lanaras",
-    title: "Private Markets Coverage Analyst",
+    title: "Private Markets Coverage Analyst · Remote / Europe. Konstantinos supports private-market coverage, research, opportunity mapping, website execution, and selected market-facing workstreams.",
     linkedin: "https://www.linkedin.com/in/konstantinoslanaras0504/",
     image: konstantinosImg.url,
     objectPosition: "50% 50%",
@@ -75,7 +75,7 @@ const TEAM = [
   {
     initials: "JZ",
     name: "Joey Zhu",
-    title: "FulfillmentOS and Data Pipeline Analyst",
+    title: "FulfillmentOS & Data Pipeline Analyst · Remote / Global. Joey supports Ravencourt's FulfillmentOS infrastructure, lead data pipelines, classification workflows, and execution-support systems.",
     linkedin: "https://www.linkedin.com/in/joey-zhu-7006a0318/",
     image: joeyImg.url,
     objectPosition: "50% 28%",
@@ -181,12 +181,16 @@ function Hero() {
         </div>
         <div className="w-16 h-px bg-white/30 mb-10" />
         <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.04] tracking-tight max-w-5xl">
-          Private Markets Advisory. Strategic Capital, M&amp;A, and Transaction Readiness.
+          Private Markets Advisory. Strategic Capital. M&amp;A and Secondaries. Transaction Readiness.
         </h1>
         <p className="mt-10 text-lg md:text-xl text-[oklch(0.86_0.01_85)] font-light max-w-3xl leading-relaxed">
-          Ravencourt Capital is a Milan-based private markets advisory boutique supporting private
-          companies, private funds, strategic transactions, M&amp;A processes, investor readiness,
-          and buy-side diligence across Europe, MENA, North America, and select global markets.
+          Ravencourt Capital is a Milan-based private markets advisory boutique supporting
+          founder-led companies, fund managers, acquisition entrepreneurs, family offices,
+          strategic buyers, and institutional partners across strategic capital readiness, M&amp;A,
+          secondary transactions, capital solutions, and buy-side diligence.
+        </p>
+        <p className="mt-6 text-xs md:text-sm text-white/60 uppercase tracking-[0.22em] max-w-3xl leading-relaxed">
+          Strategic Capital Readiness · M&amp;A Advisory · Secondaries &amp; Capital Solutions · Buy-Side Diligence · FulfillmentOS
         </p>
       </div>
 
@@ -240,20 +244,32 @@ function SectionHeader({
 function WhatWeDo() {
   const cards = [
     {
-      t: "Private Companies and Founders",
-      b: "We support founders and private company owners through the process of strategic capital readiness, institutional positioning, and transaction preparation. We help structure the narrative, prepare the documentation, and assess counterparty fit before any market engagement begins.",
+      t: "Founder-Led Companies & Management Teams",
+      b: "We support founder-led companies and management teams preparing for institutional scrutiny, strategic capital processes, acquisition-led growth, shareholder liquidity discussions, or M&A-related engagement. Core areas: Strategic capital readiness · Institutional positioning · Valuation and narrative alignment · Data-room and documentation discipline · Governance and process readiness · Counterparty-fit mapping · Founder preparation and meeting support.",
     },
     {
-      t: "Private Funds and GPs",
-      b: "We support fund managers and GPs in investor readiness, allocator-aligned positioning, and diligence coordination. We do not act as a placement agent. We prepare mandates for institutional engagement and support the process through authorised partners where regulated activity is required.",
+      t: "Fund Managers & Emerging GPs",
+      b: "We support fund managers and emerging GPs in strengthening institutional positioning, LP-readiness, documentation quality, strategy articulation, and allocator-facing communication before deeper market engagement. Core areas: Fund positioning and mandate articulation · LP-readiness review · Track-record and strategy presentation · Data-room and diligence preparation · Allocator-fit mapping · Governance and process discipline · Regulated-partner coordination where required.",
     },
     {
-      t: "M&A and Strategic Transactions",
-      b: "We advise on M&A readiness, buy-side target assessment, and strategic transaction support across founder-led and mid-market situations. Our work covers mandate definition, counterparty mapping, documentation preparation, and diligence coordination.",
+      t: "M&A, Strategic Transactions & Capital Solutions",
+      b: "We support founder-led and mid-market strategic transaction processes where valuation realism, buyer intent, materials quality, process control, and counterparty discipline are essential. Core areas: M&A readiness · Transaction positioning · Buyer and counterparty-fit mapping · Management presentation preparation · Due diligence coordination · Capital-solutions assessment · Process and communication support.",
     },
     {
-      t: "Buy-Side and Allocators",
-      b: "We support funds and investors with buy-side diligence, opportunity screening, and counterparty-fit assessment. We qualify situations against mandate constraints — geography, sector, ticket size, execution timeline — before any engagement is facilitated.",
+      t: "Secondary Transactions & Liquidity Solutions",
+      b: "We support selected GP-led, LP-led, shareholder-liquidity, and portfolio-level secondary situations through readiness review, positioning, documentation preparation, counterparty-fit mapping, diligence coordination, and capital-solutions advisory. Core areas: Secondary transaction readiness · GP-led and LP-led situation review · Continuation and liquidity narrative support · Buyer-fit and counterparty mapping · Documentation preparation · Diligence and Q&A coordination · Authorised-partner execution where required.",
+    },
+    {
+      t: "Allocators, Family Offices & Strategic Capital Partners",
+      b: "We support buy-side counterparties with opportunity screening, mandate-fit assessment, early diligence, and structured review support across selected private-market opportunities. Core areas: Opportunity screening · Mandate-fit assessment · Downside-risk review · Early diligence support · Sector and counterparty mapping · Investment committee preparation support.",
+    },
+    {
+      t: "Search Funds & Acquisition Entrepreneurs",
+      b: "We support searchers and acquisition entrepreneurs across target evaluation, acquisition readiness, transaction structuring, and post-acquisition feasibility analysis. Core areas: Target screening · Cash-flow quality review · Debt-capacity assessment · Seller and counterparty evaluation · Acquisition thesis refinement · Execution pathway support.",
+    },
+    {
+      t: "Co-Advisory & Referral Partners",
+      b: "We work with selected advisors, legal professionals, consultants, intermediaries, and ecosystem partners where complementary capabilities can improve client outcomes. Core areas: Partner qualification · Mandate alignment · Client ownership clarity · Process sequencing · Documentation and referral discipline · Cross-border advisory coordination.",
     },
   ];
   return (
@@ -280,13 +296,13 @@ function WhatWeDo() {
 
 function Method() {
   const steps = [
-    ["Initial Review", "We assess the situation, mandate type, and execution readiness before any engagement begins."],
-    ["Mandate Fit", "We define the mandate parameters — geography, ticket size, structure, timeline — and validate them against market reality."],
-    ["Readiness Assessment", "We identify gaps in documentation, governance, and positioning that would reduce institutional credibility."],
-    ["Positioning and Documentation", "We develop investor-grade materials, financial narratives, and positioning frameworks aligned to the target counterparty universe."],
-    ["Counterparty-Fit Mapping", "We map the right counterparties based on mandate alignment, prior activity, and structural compatibility."],
-    ["Diligence Coordination", "We manage information flow, data room discipline, and Q&A processes with counterparties and their advisors."],
-    ["Execution Support", "We support the process through to term sheet and beyond, staying involved rather than stepping back after introductions. Regulated execution is undertaken only through authorised partners where required."],
+    ["Initial Review", "We assess the opportunity, counterparty, stage, documentation quality, commercial context, and potential mandate relevance."],
+    ["Mandate Fit", "We evaluate whether the client, opportunity, timing, geography, transaction type, and counterparty universe justify Ravencourt's involvement."],
+    ["Readiness Assessment", "We review positioning, documentation, data-room quality, valuation narrative, governance discipline, decision preparedness, and execution risk."],
+    ["Strategic Positioning", "We refine the narrative, materials, commercial logic, institutional communication standard, and relevance to the target counterparty universe."],
+    ["Counterparty-Fit Mapping", "We assess potential counterparty relevance by mandate, ticket size, geography, asset-class appetite, prior activity, decision process, and relationship context."],
+    ["Diligence & Process Support", "We support disciplined communication, documentation flow, meeting preparation, follow-up structure, Q&A coordination, and process accountability."],
+    ["Decision-Stage Execution", "We remain involved through defined engagement checkpoints, supporting alignment between strategy, documentation, counterparty feedback, diligence requirements, and practical next steps."],
   ];
   return (
     <section id="method" className="py-20 lg:py-28 border-b border-[var(--rule)] bg-[oklch(0.945_0.008_85)]">
@@ -294,7 +310,7 @@ function Method() {
         <SectionHeader
           eyebrow="The Ravencourt Method"
           title="How We Work"
-          sub="A structured process from first review to transaction support."
+          sub="Every engagement is assessed through a structured advisory process before deeper work begins."
         />
         <ol className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
           {steps.map(([t, d], i) => (
@@ -324,14 +340,18 @@ function Method() {
 
 function Intelligence() {
   const tiles = [
-    ["Investor Type", "We classify counterparties by structure — PE fund, family office, corporate investor, search fund, sovereign vehicle — to ensure structural compatibility."],
-    ["Ticket Size", "We verify that the counterparty's minimum and maximum ticket size is genuinely compatible with the mandate before any introduction."],
-    ["Geography", "We assess primary and secondary geographic focus, distinguishing between stated and demonstrated appetite."],
-    ["Asset Class Appetite", "We identify whether the counterparty is actively deploying in the relevant asset class or strategy type."],
-    ["Mandate Fit", "We score the match between the sell-side mandate and buy-side criteria across sector, size, structure, and timeline."],
-    ["Prior Activity", "We assess recent transaction history to distinguish active deployers from passive monitors."],
-    ["Decision Process", "We understand how decisions are made — committee structure, timeline, information requirements — before engagement begins."],
-    ["Relationship Status", "We track and weight the strength of existing relationships to prioritise highest-conversion introductions."],
+    ["Investor Type", "Counterparties classified by structure — PE fund, family office, corporate investor, search fund, sovereign vehicle — for structural compatibility."],
+    ["Ticket Size", "Minimum and maximum ticket size verified as genuinely compatible with the mandate before any introduction."],
+    ["Geography", "Primary and secondary geographic focus assessed, distinguishing between stated and demonstrated appetite."],
+    ["Asset-Class Appetite", "We identify whether the counterparty is actively deploying in the relevant asset class or strategy type."],
+    ["Strategy Fit", "Alignment between strategy, stage, structure, and counterparty thesis evaluated before engagement."],
+    ["Mandate Relevance", "We score the match between the mandate and counterparty criteria across sector, size, structure, and timeline."],
+    ["Prior Activity", "Recent transaction history assessed to distinguish active deployers from passive monitors."],
+    ["Decision Process", "Committee structure, timeline, and information requirements understood before engagement begins."],
+    ["Relationship Status", "Strength and history of existing relationships weighted to prioritise highest-conversion engagement."],
+    ["Timing and Liquidity Context", "Current deployment timing, liquidity windows, and cycle position assessed for mandate fit."],
+    ["Regulatory and Jurisdictional Considerations", "Cross-border regulatory, jurisdictional, and authorisation requirements factored before engagement."],
+    ["Follow-On Engagement Probability", "Likelihood of follow-on engagement, repeat deployment, and longer-term relevance evaluated."],
   ];
   return (
     <section id="intelligence" className="py-20 lg:py-28 border-b border-[var(--rule)]">
@@ -339,7 +359,7 @@ function Intelligence() {
         <SectionHeader
           eyebrow="Allocator Intelligence Layer"
           title="Allocator Intelligence"
-          sub="Every engagement is assessed across a structured set of dimensions before counterparty contact begins."
+          sub="Ravencourt's advisory process is supported by a structured intelligence layer designed to improve counterparty relevance, reduce noise, and strengthen decision discipline. We assess:"
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[var(--rule)] border border-[var(--rule)]">
           {tiles.map(([t, d], i) => (
@@ -361,6 +381,10 @@ function Intelligence() {
             </div>
           ))}
         </div>
+        <p className="mt-10 text-sm text-[var(--ink-soft)] italic max-w-4xl leading-relaxed">
+          This layer supports founder-led companies, fund managers, M&amp;A situations, secondaries,
+          searchers, and buy-side counterparties by ensuring engagement is based on fit, not volume.
+        </p>
       </div>
     </section>
   );
@@ -368,12 +392,12 @@ function Intelligence() {
 
 function FulfillmentOS() {
   const lines = [
-    "Mandate alignment verified before any market engagement begins",
-    "Investor-grade documentation and data integrity maintained throughout",
-    "Structured execution pathways with defined decision gates at each stage",
-    "Governance discipline maintained across counterparties and jurisdictions",
-    "Fee structures aligned to mandate type — fixed fees for advisory, success fees tied to transaction close",
-    "Cross-border structuring and compliance consistency across Europe, MENA, and North America",
+    "Mandate Alignment — We verify mandate-level alignment before deeper market engagement begins.",
+    "Documentation Discipline — We maintain investor-grade documentation standards, data-room discipline, and version control throughout the process.",
+    "Decision Gates — We structure engagements around defined checkpoints, decision gates, and scope-controlled workstreams.",
+    "Governance Control — We maintain process discipline across counterparties, communication, documentation, and jurisdictional considerations.",
+    "Outcome Attribution — We track documented engagement scope, process contribution, counterparty interaction, and outcome attribution.",
+    "Cross-Border Consistency — We coordinate execution across jurisdictions with attention to legal, regulatory, cultural, and commercial context.",
   ];
   return (
     <section
@@ -390,11 +414,9 @@ function FulfillmentOS() {
             It is not a product. It is how we work.
           </p>
           <p className="mt-8 text-lg md:text-xl text-[oklch(0.86_0.01_85)] font-light leading-relaxed">
-            FulfillmentOS is the internal operating framework that governs how every Ravencourt
-            engagement is structured, executed, and closed. It ensures mandate clarity,
-            documentation discipline, counterparty-fit verification, and governance consistency
-            from first review to transaction support — regardless of geography, mandate type, or
-            market conditions.
+            FulfillmentOS is Ravencourt Capital's internal operating framework. It governs how
+            engagements are assessed, structured, executed, and reviewed. It is not a product. It
+            is how we work.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-6 max-w-6xl">
@@ -421,15 +443,19 @@ function Footprint() {
   const regions = [
     {
       t: "Europe",
-      b: "Primary market. Cross-border mandates across Western and Southern Europe with particular depth in Italy, France, Germany, Luxembourg, Greece, and the United Kingdom. Relationships span founder-led SMEs, mid-market sponsors, and institutional allocators.",
+      b: "Primary market. Coverage across selected European private-market situations involving founder-led companies, fund managers, family offices, searchers, acquisition entrepreneurs, strategic acquirers, and institutional counterparties.",
     },
     {
       t: "MENA",
-      b: "Active coverage across Gulf-based family offices, sovereign-adjacent capital pools, and emerging market mandates. Focus on cross-border situations bridging European deal flow with Middle Eastern and North African counterparties.",
+      b: "Selective cross-border coverage across selected Gulf and MENA relationships where European private-market opportunities, family-office engagement, strategic transactions, or institutional partnership opportunities may be relevant.",
     },
     {
       t: "North America",
-      b: "Select cross-border engagements with institutional allocators, family offices, and acquisition entrepreneurs. Focus on transatlantic mandates where European execution capability and North American capital appetite intersect.",
+      b: "Selective cross-border engagement where European execution capability, private-market opportunities, and North American capital or strategic interest may intersect.",
+    },
+    {
+      t: "Select Global Markets",
+      b: "Relationship-led engagement in select global markets where Ravencourt's relationship network, advisory capability, and mandate relevance justify involvement.",
     },
   ];
   return (
@@ -437,10 +463,10 @@ function Footprint() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="Operating Footprint" title="Where We Operate" />
         <p className="text-lg md:text-xl text-[var(--ink)] font-light leading-relaxed max-w-4xl mb-16">
-          Milan-based, with cross-border coverage across Europe, MENA, North America, and select
-          global markets.
+          Ravencourt is Milan-based, with cross-border coverage across Europe, MENA, North America,
+          and select global markets. Our operating model is selective by design.
         </p>
-        <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           {regions.map((r) => (
             <div key={r.t}>
               <div className="h-px w-12 bg-[var(--bronze)] mb-6" />
@@ -461,7 +487,7 @@ function Team() {
       className="py-20 lg:py-28 border-b border-[var(--rule)] bg-[oklch(0.945_0.008_85)]"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <SectionHeader eyebrow="Team" title="The Team" />
+        <SectionHeader eyebrow="Team" title="Senior-led, by design." />
         <div className="grid md:grid-cols-3 gap-x-12 gap-y-16 lg:gap-x-16 lg:gap-y-20">
           {TEAM.slice(0, 3).map((m) => (
             <TeamCard key={m.name} m={m} />
@@ -473,7 +499,7 @@ function Team() {
           ))}
         </div>
         <p className="mt-16 text-center text-sm text-[var(--ink-soft)] italic">
-          All engagements are senior-led. No junior handoffs.
+          All engagements operate under senior-led oversight.
         </p>
       </div>
     </section>
@@ -516,13 +542,28 @@ function TeamCard({ m }: { m: typeof TEAM[number] }) {
 function Regulatory() {
   return (
     <section className="py-16 bg-background">
-      <div className="mx-auto max-w-3xl px-6 lg:px-12 text-center">
+      <div className="mx-auto max-w-3xl px-6 lg:px-12 text-center space-y-4">
+        <p className="eyebrow text-[var(--ink-soft)]">Regulatory Framework</p>
         <p className="text-xs md:text-sm text-[var(--ink-soft)] leading-relaxed">
           Ravencourt Capital provides strategic advisory, investor-readiness,
-          transaction-preparation, and diligence-support services. Any regulated activity —
-          including securities placement, investment promotion, brokerage, or arrangement
-          activity — is undertaken only through appropriately authorised partners where required.
-          Nothing on this website constitutes an offer, solicitation, or invitation to invest.
+          transaction-preparation, M&amp;A support, secondaries-readiness support, buy-side
+          diligence, and institutional partnership coordination services.
+        </p>
+        <p className="text-xs md:text-sm text-[var(--ink-soft)] leading-relaxed">
+          Ravencourt Capital does not hold itself out as a broker-dealer, placement agent,
+          investment manager, or regulated securities intermediary.
+        </p>
+        <p className="text-xs md:text-sm text-[var(--ink-soft)] leading-relaxed">
+          Any regulated activity, including securities placement, investment promotion, brokerage,
+          investment arrangement, fund distribution, or jurisdiction-specific regulated activity,
+          is undertaken only through appropriately authorised partners where required.
+        </p>
+        <p className="text-xs md:text-sm text-[var(--ink-soft)] leading-relaxed">
+          This website is directed exclusively at professional clients, institutional
+          counterparties, sophisticated investors, and eligible business users. It does not
+          constitute an offer, solicitation, recommendation, or invitation to buy or sell
+          securities, financial instruments, fund interests, or investment products in any
+          jurisdiction.
         </p>
       </div>
     </section>
@@ -531,19 +572,31 @@ function Regulatory() {
 
 const CONTACT_TILES = [
   {
-    label: "Private Company or Founder",
+    label: "Founder-Led Companies & Management Teams",
     url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
   },
   {
-    label: "M&A or Strategic Transaction",
+    label: "Fund Managers & Emerging GPs",
+    url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
+  },
+  {
+    label: "M&A / Strategic Transactions",
     url: "https://cal.com/team/ravencourt-capital/m-a-advisory-founder-led-sme-sale-strategic-transaction",
   },
   {
-    label: "Buy-Side or Allocator",
+    label: "Secondaries & Capital Solutions",
+    url: "https://cal.com/team/ravencourt-capital/m-a-advisory-founder-led-sme-sale-strategic-transaction",
+  },
+  {
+    label: "Allocators / Family Offices / Strategic Capital Partners",
     url: "https://cal.com/team/ravencourt-capital/buy-side-advisory-institutional-acquisitions-capital-deployment",
   },
   {
-    label: "Co-Advisory or Referral Partner",
+    label: "Search Funds / Acquisition Entrepreneurs",
+    url: "https://cal.com/team/ravencourt-capital/buy-side-advisory-institutional-acquisitions-capital-deployment",
+  },
+  {
+    label: "Co-Advisory / Referral Partners",
     url: "https://cal.com/team/ravencourt-capital/co-advisory-by-referral",
   },
 ];
@@ -563,9 +616,12 @@ function Contact() {
             Make an Enquiry
           </h2>
           <p className="mt-6 text-lg text-[oklch(0.82_0.01_85)] font-light leading-relaxed">
-            All enquiries are treated with strict confidentiality. Select the description that
-            best fits your situation.
+            All enquiries are treated with discretion. If you are considering a strategic
+            transaction, capital-readiness process, M&amp;A mandate, secondary transaction,
+            buy-side review, fund-manager readiness exercise, acquisition search, or institutional
+            partnership discussion, Ravencourt is available to assess alignment.
           </p>
+          <p className="mt-6 eyebrow text-[var(--bronze-soft)]">Select the most relevant pathway:</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10">
@@ -684,7 +740,7 @@ function Contact() {
             </div>
             <div>
               <p className="eyebrow mb-2 text-[var(--bronze-soft)]">Office</p>
-              <p className="text-lg leading-relaxed">Milan, Italy</p>
+              <p className="text-lg leading-relaxed">Via Carlo Imbonati, 62/2, 20159 Milano, Italy</p>
             </div>
           </div>
         </div>
@@ -697,15 +753,20 @@ function Footer() {
   return (
     <footer className="bg-[var(--ink)] text-[oklch(0.7_0.01_85)] border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6 lg:px-12 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-xs">
-        <p className="text-[oklch(0.75_0.01_85)]">
-          Ravencourt Capital © 2025 · P.IVA 11381320966 · Milan, Italy ·{" "}
-          <a
-            href="mailto:contact@ravencourtcapital.com"
-            className="hover:text-[var(--bronze)] transition-colors"
-          >
-            contact@ravencourtcapital.com
-          </a>
-        </p>
+        <div className="text-[oklch(0.75_0.01_85)] space-y-1 leading-relaxed">
+          <p className="font-serif text-sm text-white/90">Ravencourt Capital</p>
+          <p>Allocator-Aligned Private Markets Advisory</p>
+          <p>Milan, Italy · Cross-border coverage across Europe, MENA, North America, and select global markets</p>
+          <p>Ravencourt Capital di Rohan Kapoor · P.IVA 11381320966</p>
+          <p>Registered Office: Via Carlo Imbonati, 62/2, 20159 Milano, Italy</p>
+          <p>
+            <a href="mailto:contact@ravencourtcapital.com" className="hover:text-[var(--bronze)] transition-colors">contact@ravencourtcapital.com</a>
+            {" · "}
+            <a href="tel:+393896497363" className="hover:text-[var(--bronze)] transition-colors">+39 389 649 7363</a>
+          </p>
+          <p className="italic text-[oklch(0.65_0.01_85)]">For professional and institutional use only. Not for retail distribution.</p>
+          <p>© 2026 Ravencourt Capital. All rights reserved.</p>
+        </div>
         <a
           href="https://linkedin.com/company/ravencourt-capital"
           target="_blank"
