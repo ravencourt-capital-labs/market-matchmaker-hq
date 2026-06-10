@@ -64,10 +64,10 @@ const TEAM = [
   },
   {
     initials: "SS",
-    name: "Sania Shaikh",
+    name: "Saania Shaikh",
     role: "Partnerships & Operations Director",
     location: "Remote / Cross-border",
-    linkedin: "https://linkedin.com/in/sanian",
+    linkedin: "https://linkedin.com/in/saania",
     image: saaniaImg.url,
     objectPosition: "50% 26%",
   },
