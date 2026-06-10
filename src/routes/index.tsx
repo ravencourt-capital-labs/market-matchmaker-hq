@@ -321,34 +321,95 @@ function SectionHeader({
 }
 
 function WhatWeDo() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const cards = [
     {
       t: "Founder-Led Companies & Management Teams",
-      b: "We support founder-led companies and management teams preparing for institutional scrutiny, strategic capital processes, acquisition-led growth, shareholder liquidity discussions, or M&A-related engagement. Core areas: Strategic capital readiness · Institutional positioning · Valuation and narrative alignment · Data-room and documentation discipline · Governance and process readiness · Counterparty-fit mapping · Founder preparation and meeting support.",
+      intro: "We support founder-led companies and management teams preparing for institutional scrutiny, strategic capital processes, acquisition-led growth, shareholder liquidity discussions, or M&A-related engagement.",
+      bullets: [
+        "Strategic capital readiness",
+        "Institutional positioning",
+        "Valuation and narrative alignment",
+        "Data-room and documentation discipline",
+        "Governance and process readiness",
+        "Counterparty-fit mapping",
+        "Founder preparation and meeting support",
+      ],
     },
     {
       t: "Fund Managers & Emerging GPs",
-      b: "We support fund managers and emerging GPs in strengthening institutional positioning, LP-readiness, documentation quality, strategy articulation, and allocator-facing communication before deeper market engagement. Core areas: Fund positioning and mandate articulation · LP-readiness review · Track-record and strategy presentation · Data-room and diligence preparation · Allocator-fit mapping · Governance and process discipline · Regulated-partner coordination where required.",
+      intro: "We support fund managers and emerging GPs in strengthening institutional positioning, LP-readiness, documentation quality, strategy articulation, and allocator-facing communication before deeper market engagement.",
+      bullets: [
+        "Fund positioning and mandate articulation",
+        "LP-readiness review",
+        "Track-record and strategy presentation",
+        "Data-room and diligence preparation",
+        "Allocator-fit mapping",
+        "Governance and process discipline",
+        "Regulated-partner coordination where required",
+      ],
     },
     {
       t: "M&A, Strategic Transactions & Capital Solutions",
-      b: "We support founder-led and mid-market strategic transaction processes where valuation realism, buyer intent, materials quality, process control, and counterparty discipline are essential. Core areas: M&A readiness · Transaction positioning · Buyer and counterparty-fit mapping · Management presentation preparation · Due diligence coordination · Capital-solutions assessment · Process and communication support.",
+      intro: "We support founder-led and mid-market strategic transaction processes where valuation realism, buyer intent, materials quality, process control, and counterparty discipline are essential.",
+      bullets: [
+        "M&A readiness",
+        "Transaction positioning",
+        "Buyer and counterparty-fit mapping",
+        "Management presentation preparation",
+        "Due diligence coordination",
+        "Capital-solutions assessment",
+        "Process and communication support",
+      ],
     },
     {
       t: "Secondary Transactions & Liquidity Solutions",
-      b: "We support selected GP-led, LP-led, shareholder-liquidity, and portfolio-level secondary situations through readiness review, positioning, documentation preparation, counterparty-fit mapping, diligence coordination, and capital-solutions advisory. Core areas: Secondary transaction readiness · GP-led and LP-led situation review · Continuation and liquidity narrative support · Buyer-fit and counterparty mapping · Documentation preparation · Diligence and Q&A coordination · Authorised-partner execution where required.",
+      intro: "We support selected GP-led, LP-led, shareholder-liquidity, and portfolio-level secondary situations through readiness review, positioning, documentation preparation, and diligence coordination.",
+      bullets: [
+        "Secondary transaction readiness",
+        "GP-led and LP-led situation review",
+        "Continuation and liquidity narrative support",
+        "Buyer-fit and counterparty mapping",
+        "Documentation preparation",
+        "Diligence and Q&A coordination",
+        "Authorised-partner execution where required",
+      ],
     },
     {
       t: "Allocators, Family Offices & Strategic Capital Partners",
-      b: "We support buy-side counterparties with opportunity screening, mandate-fit assessment, early diligence, and structured review support across selected private-market opportunities. Core areas: Opportunity screening · Mandate-fit assessment · Downside-risk review · Early diligence support · Sector and counterparty mapping · Investment committee preparation support.",
+      intro: "We support buy-side counterparties with opportunity screening, mandate-fit assessment, early diligence, and structured review support across selected private-market opportunities.",
+      bullets: [
+        "Opportunity screening",
+        "Mandate-fit assessment",
+        "Downside-risk review",
+        "Early diligence support",
+        "Sector and counterparty mapping",
+        "Investment committee preparation support",
+      ],
     },
     {
       t: "Search Funds & Acquisition Entrepreneurs",
-      b: "We support searchers and acquisition entrepreneurs across target evaluation, acquisition readiness, transaction structuring, and post-acquisition feasibility analysis. Core areas: Target screening · Cash-flow quality review · Debt-capacity assessment · Seller and counterparty evaluation · Acquisition thesis refinement · Execution pathway support.",
+      intro: "We support searchers and acquisition entrepreneurs across target evaluation, acquisition readiness, transaction structuring, and post-acquisition feasibility analysis.",
+      bullets: [
+        "Target screening",
+        "Cash-flow quality review",
+        "Debt-capacity assessment",
+        "Seller and counterparty evaluation",
+        "Acquisition thesis refinement",
+        "Execution pathway support",
+      ],
     },
     {
       t: "Co-Advisory & Referral Partners",
-      b: "We work with selected advisors, legal professionals, consultants, intermediaries, and ecosystem partners where complementary capabilities can improve client outcomes. Core areas: Partner qualification · Mandate alignment · Client ownership clarity · Process sequencing · Documentation and referral discipline · Cross-border advisory coordination.",
+      intro: "We work with selected advisors, legal professionals, consultants, intermediaries, and ecosystem partners where complementary capabilities can improve client outcomes.",
+      bullets: [
+        "Partner qualification",
+        "Mandate alignment",
+        "Client ownership clarity",
+        "Process sequencing",
+        "Documentation and referral discipline",
+        "Cross-border advisory coordination",
+      ],
     },
   ];
   return (
@@ -356,17 +417,40 @@ function WhatWeDo() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="Mandates" title="What We Do" />
         <div className="grid md:grid-cols-2 gap-px bg-[var(--rule)] border border-[var(--rule)]">
-          {cards.map((c) => (
-            <div
-              key={c.t}
-              className="group bg-background p-10 lg:p-12 border-t-2 border-[var(--bronze)] transition-all hover:shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] hover:-translate-y-0.5"
-            >
-              <h3 className="font-serif text-2xl md:text-3xl text-[var(--ink)] leading-snug mb-5">
-                {c.t}
-              </h3>
-              <p className="text-[var(--ink-soft)] leading-relaxed">{c.b}</p>
-            </div>
-          ))}
+          {cards.map((c, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div
+                key={c.t}
+                className="group relative bg-background p-10 lg:p-12 border-t-2 border-[var(--bronze)] transition-all hover:shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] hover:-translate-y-0.5"
+              >
+                <h3 className="font-serif text-2xl md:text-3xl text-[var(--ink)] leading-snug mb-4 pr-8">
+                  {c.t}
+                </h3>
+                <p className="text-[var(--ink-soft)] leading-relaxed pr-8">{c.intro}</p>
+                <div
+                  className={`overflow-hidden transition-all duration-500 ${isOpen ? "max-h-96 opacity-100 mt-5" : "max-h-0 opacity-0 mt-0"}`}
+                >
+                  <ul className="space-y-2">
+                    {c.bullets.map((b) => (
+                      <li key={b} className="flex items-start gap-3 text-sm text-[var(--ink-soft)] leading-relaxed">
+                        <span className="mt-2 w-1 h-px bg-[var(--bronze)] shrink-0" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  aria-label={isOpen ? "Collapse" : "Expand"}
+                  className="absolute bottom-5 right-5 w-8 h-8 flex items-center justify-center transition-transform duration-300"
+                >
+                  <span className={`absolute w-3 h-px bg-[var(--ink-soft)] transition-transform duration-300 ${isOpen ? "rotate-0" : ""}`} />
+                  <span className={`absolute w-px h-3 bg-[var(--ink-soft)] transition-transform duration-300 ${isOpen ? "rotate-90 opacity-0" : ""}`} />
+                </button>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
