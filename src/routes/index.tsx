@@ -487,7 +487,7 @@ function Team() {
       className="py-20 lg:py-28 border-b border-[var(--rule)] bg-[oklch(0.945_0.008_85)]"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <SectionHeader eyebrow="Team" title="The Team" />
+        <SectionHeader eyebrow="Team" title="Senior-led, by design." />
         <div className="grid md:grid-cols-3 gap-x-12 gap-y-16 lg:gap-x-16 lg:gap-y-20">
           {TEAM.slice(0, 3).map((m) => (
             <TeamCard key={m.name} m={m} />
@@ -499,7 +499,7 @@ function Team() {
           ))}
         </div>
         <p className="mt-16 text-center text-sm text-[var(--ink-soft)] italic">
-          All engagements are senior-led. No junior handoffs.
+          All engagements operate under senior-led oversight.
         </p>
       </div>
     </section>
@@ -542,13 +542,28 @@ function TeamCard({ m }: { m: typeof TEAM[number] }) {
 function Regulatory() {
   return (
     <section className="py-16 bg-background">
-      <div className="mx-auto max-w-3xl px-6 lg:px-12 text-center">
+      <div className="mx-auto max-w-3xl px-6 lg:px-12 text-center space-y-4">
+        <p className="eyebrow text-[var(--ink-soft)]">Regulatory Framework</p>
         <p className="text-xs md:text-sm text-[var(--ink-soft)] leading-relaxed">
           Ravencourt Capital provides strategic advisory, investor-readiness,
-          transaction-preparation, and diligence-support services. Any regulated activity —
-          including securities placement, investment promotion, brokerage, or arrangement
-          activity — is undertaken only through appropriately authorised partners where required.
-          Nothing on this website constitutes an offer, solicitation, or invitation to invest.
+          transaction-preparation, M&amp;A support, secondaries-readiness support, buy-side
+          diligence, and institutional partnership coordination services.
+        </p>
+        <p className="text-xs md:text-sm text-[var(--ink-soft)] leading-relaxed">
+          Ravencourt Capital does not hold itself out as a broker-dealer, placement agent,
+          investment manager, or regulated securities intermediary.
+        </p>
+        <p className="text-xs md:text-sm text-[var(--ink-soft)] leading-relaxed">
+          Any regulated activity, including securities placement, investment promotion, brokerage,
+          investment arrangement, fund distribution, or jurisdiction-specific regulated activity,
+          is undertaken only through appropriately authorised partners where required.
+        </p>
+        <p className="text-xs md:text-sm text-[var(--ink-soft)] leading-relaxed">
+          This website is directed exclusively at professional clients, institutional
+          counterparties, sophisticated investors, and eligible business users. It does not
+          constitute an offer, solicitation, recommendation, or invitation to buy or sell
+          securities, financial instruments, fund interests, or investment products in any
+          jurisdiction.
         </p>
       </div>
     </section>
@@ -557,19 +572,31 @@ function Regulatory() {
 
 const CONTACT_TILES = [
   {
-    label: "Private Company or Founder",
+    label: "Founder-Led Companies & Management Teams",
     url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
   },
   {
-    label: "M&A or Strategic Transaction",
+    label: "Fund Managers & Emerging GPs",
+    url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
+  },
+  {
+    label: "M&A / Strategic Transactions",
     url: "https://cal.com/team/ravencourt-capital/m-a-advisory-founder-led-sme-sale-strategic-transaction",
   },
   {
-    label: "Buy-Side or Allocator",
+    label: "Secondaries & Capital Solutions",
+    url: "https://cal.com/team/ravencourt-capital/m-a-advisory-founder-led-sme-sale-strategic-transaction",
+  },
+  {
+    label: "Allocators / Family Offices / Strategic Capital Partners",
     url: "https://cal.com/team/ravencourt-capital/buy-side-advisory-institutional-acquisitions-capital-deployment",
   },
   {
-    label: "Co-Advisory or Referral Partner",
+    label: "Search Funds / Acquisition Entrepreneurs",
+    url: "https://cal.com/team/ravencourt-capital/buy-side-advisory-institutional-acquisitions-capital-deployment",
+  },
+  {
+    label: "Co-Advisory / Referral Partners",
     url: "https://cal.com/team/ravencourt-capital/co-advisory-by-referral",
   },
 ];
