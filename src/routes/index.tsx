@@ -572,31 +572,23 @@ function Regulatory() {
 
 const CONTACT_TILES = [
   {
-    label: "Founder-Led Companies & Management Teams",
+    label: "Private Company or Founder",
     url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
   },
   {
-    label: "Fund Managers & Emerging GPs",
+    label: "Private Fund or GP",
     url: "https://cal.com/team/ravencourt-capital/strategic-capital-investor-readiness-founders-gps",
   },
   {
-    label: "M&A / Strategic Transactions",
+    label: "M&A or Strategic Transaction",
     url: "https://cal.com/team/ravencourt-capital/m-a-advisory-founder-led-sme-sale-strategic-transaction",
   },
   {
-    label: "Secondaries & Capital Solutions",
-    url: "https://cal.com/team/ravencourt-capital/m-a-advisory-founder-led-sme-sale-strategic-transaction",
-  },
-  {
-    label: "Allocators / Family Offices / Strategic Capital Partners",
+    label: "Buy-Side or Allocator",
     url: "https://cal.com/team/ravencourt-capital/buy-side-advisory-institutional-acquisitions-capital-deployment",
   },
   {
-    label: "Search Funds / Acquisition Entrepreneurs",
-    url: "https://cal.com/team/ravencourt-capital/buy-side-advisory-institutional-acquisitions-capital-deployment",
-  },
-  {
-    label: "Co-Advisory / Referral Partners",
+    label: "Co-Advisory or Referral Partner",
     url: "https://cal.com/team/ravencourt-capital/co-advisory-by-referral",
   },
 ];
@@ -624,7 +616,7 @@ function Contact() {
           <p className="mt-6 eyebrow text-[var(--bronze-soft)]">Select the most relevant pathway:</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-10">
           {CONTACT_TILES.map((t) => (
             <button
               key={t.label}
