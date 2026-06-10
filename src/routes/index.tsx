@@ -414,11 +414,9 @@ function FulfillmentOS() {
             It is not a product. It is how we work.
           </p>
           <p className="mt-8 text-lg md:text-xl text-[oklch(0.86_0.01_85)] font-light leading-relaxed">
-            FulfillmentOS is the internal operating framework that governs how every Ravencourt
-            engagement is structured, executed, and closed. It ensures mandate clarity,
-            documentation discipline, counterparty-fit verification, and governance consistency
-            from first review to transaction support — regardless of geography, mandate type, or
-            market conditions.
+            FulfillmentOS is Ravencourt Capital's internal operating framework. It governs how
+            engagements are assessed, structured, executed, and reviewed. It is not a product. It
+            is how we work.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-6 max-w-6xl">
@@ -445,15 +443,19 @@ function Footprint() {
   const regions = [
     {
       t: "Europe",
-      b: "Primary market. Cross-border mandates across Western and Southern Europe with particular depth in Italy, France, Germany, Luxembourg, Greece, and the United Kingdom. Relationships span founder-led SMEs, mid-market sponsors, and institutional allocators.",
+      b: "Primary market. Coverage across selected European private-market situations involving founder-led companies, fund managers, family offices, searchers, acquisition entrepreneurs, strategic acquirers, and institutional counterparties.",
     },
     {
       t: "MENA",
-      b: "Active coverage across Gulf-based family offices, sovereign-adjacent capital pools, and emerging market mandates. Focus on cross-border situations bridging European deal flow with Middle Eastern and North African counterparties.",
+      b: "Selective cross-border coverage across selected Gulf and MENA relationships where European private-market opportunities, family-office engagement, strategic transactions, or institutional partnership opportunities may be relevant.",
     },
     {
       t: "North America",
-      b: "Select cross-border engagements with institutional allocators, family offices, and acquisition entrepreneurs. Focus on transatlantic mandates where European execution capability and North American capital appetite intersect.",
+      b: "Selective cross-border engagement where European execution capability, private-market opportunities, and North American capital or strategic interest may intersect.",
+    },
+    {
+      t: "Select Global Markets",
+      b: "Relationship-led engagement in select global markets where Ravencourt's relationship network, advisory capability, and mandate relevance justify involvement.",
     },
   ];
   return (
@@ -461,10 +463,10 @@ function Footprint() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="Operating Footprint" title="Where We Operate" />
         <p className="text-lg md:text-xl text-[var(--ink)] font-light leading-relaxed max-w-4xl mb-16">
-          Milan-based, with cross-border coverage across Europe, MENA, North America, and select
-          global markets.
+          Ravencourt is Milan-based, with cross-border coverage across Europe, MENA, North America,
+          and select global markets. Our operating model is selective by design.
         </p>
-        <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           {regions.map((r) => (
             <div key={r.t}>
               <div className="h-px w-12 bg-[var(--bronze)] mb-6" />
