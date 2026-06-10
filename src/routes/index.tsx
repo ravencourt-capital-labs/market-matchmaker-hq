@@ -230,9 +230,6 @@ function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-12 w-full pt-28 pb-32 flex flex-col items-start text-left">
-        <div className="flex items-center gap-4 mb-10">
-          <p className="eyebrow text-white/60 !mb-0">Milan</p>
-        </div>
         <div className="w-16 h-px bg-white/30 mb-10" />
         {HERO_SLIDES.map((s, i) => (
           <div
