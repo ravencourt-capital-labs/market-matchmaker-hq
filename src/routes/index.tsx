@@ -169,28 +169,28 @@ function Header() {
 
 const HERO_SLIDES = [
   {
-    headline: "Private Markets Advisory.",
+    headline: "Private Markets Advisory",
     subtext:
       "A Milan-based advisory boutique supporting founder-led companies, fund managers, and institutional partners across private markets.",
     image: milanHero.url,
     alt: "Milan skyline at dusk",
   },
   {
-    headline: "Strategic Capital.",
+    headline: "Strategic Capital",
     subtext:
       "We prepare companies and fund managers for institutional scrutiny, allocator alignment, and capital processes built to withstand diligence.",
     image: corridorImg.url,
     alt: "Marble institutional corridor",
   },
   {
-    headline: "M&A and Secondaries.",
+    headline: "M&A and Secondaries",
     subtext:
       "Transaction readiness, counterparty-fit mapping, and process discipline across M&A, secondary transactions, and capital solutions.",
     image: deltaImg.url,
     alt: "Aerial delta at golden hour",
   },
   {
-    headline: "Transaction Readiness.",
+    headline: "Transaction Readiness",
     subtext:
       "Every engagement is assessed for documentation discipline, valuation realism, governance readiness, and execution feasibility before deeper market engagement begins.",
     image: boardroomImg.url,
