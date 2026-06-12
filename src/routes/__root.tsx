@@ -2,6 +2,11 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 
+import faviconIco from "../assets/favicons/favicon.ico.asset.json";
+import favicon16 from "../assets/favicons/favicon-16x16.png.asset.json";
+import favicon32 from "../assets/favicons/favicon-32x32.png.asset.json";
+import appleTouch from "../assets/favicons/apple-touch-icon.png.asset.json";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -75,7 +80,11 @@ export const Route = createRootRoute({
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap",
       },
-      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "icon", type: "image/x-icon", href: faviconIco.url },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: favicon16.url },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: favicon32.url },
+      { rel: "apple-touch-icon", sizes: "180x180", href: appleTouch.url },
+      { rel: "manifest", href: "/site.webmanifest" },
     ],
   }),
   shellComponent: RootShell,
