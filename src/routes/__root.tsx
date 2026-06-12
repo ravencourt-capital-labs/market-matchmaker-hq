@@ -2,6 +2,13 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 
+import faviconIco from "../assets/favicons/favicon.ico.asset.json";
+import favicon16 from "../assets/favicons/favicon-16x16.png.asset.json";
+import favicon32 from "../assets/favicons/favicon-32x32.png.asset.json";
+import appleTouch from "../assets/favicons/apple-touch-icon.png.asset.json";
+import icon192 from "../assets/favicons/icon-192x192.png.asset.json";
+import icon512 from "../assets/favicons/icon-512x512.png.asset.json";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
