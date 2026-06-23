@@ -167,9 +167,9 @@ function Header() {
 
 const HERO_SLIDES = [
   {
-    headline: "Private Markets Advisory",
+    headline: "Private Markets Boutique",
     subtext:
-      "A Milan-based advisory boutique supporting founder-led companies, fund managers, and institutional partners across private markets.",
+      "A Milan-based boutique supporting founder-led companies, fund managers, and institutional partners across private markets.",
     image: milanHero.url,
     alt: "Milan skyline at dusk",
   },
