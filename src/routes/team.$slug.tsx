@@ -132,7 +132,7 @@ function ProfilePage() {
             {profile.location}
           </p>
           <div className="mt-10 space-y-6 text-[var(--ink)]/90 leading-relaxed text-[1.0625rem]">
-            {profile.paragraphs.map((p, i) => (
+            {profile.paragraphs.map((p: string, i: number) => (
               <p key={i}>{p}</p>
             ))}
           </div>
