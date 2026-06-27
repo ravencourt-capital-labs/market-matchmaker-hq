@@ -111,7 +111,7 @@ function ProfilePage() {
           <ArrowLeft size={14} /> Team
         </Link>
       </div>
-      <div className="mx-auto max-w-7xl px-6 lg:px-12 py-12 lg:py-20 grid lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-start">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12 py-12 lg:py-20 grid md:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-start">
         <div className="w-full">
           <div className="aspect-[4/5] w-full overflow-hidden bg-[oklch(0.9_0.012_85)] border border-[var(--bronze)]/30">
             <img
