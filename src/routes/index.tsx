@@ -614,41 +614,33 @@ function Footprint() {
       id: "europe",
       t: "Europe",
       b: "Primary market. Coverage across selected European private-market situations involving founder-led companies, fund managers, family offices, searchers, acquisition entrepreneurs, strategic acquirers, and institutional counterparties.",
-      cx: 515,
-      cy: 155,
-      rx: 62,
-      ry: 42,
-      path: "M480 135 L540 125 L575 145 L565 180 L525 195 L485 180 Z",
+      path: "M470 118 L485 95 L535 88 L575 105 L585 130 L565 155 L525 162 L490 150 Z",
+      labelX: 530,
+      labelY: 130,
     },
     {
       id: "mena",
       t: "MENA",
       b: "Selective cross-border coverage across selected Gulf and MENA relationships where European private-market opportunities, family-office engagement, strategic transactions, or institutional partnership opportunities may be relevant.",
-      cx: 555,
-      cy: 225,
-      rx: 58,
-      ry: 48,
-      path: "M530 195 L590 195 L605 240 L580 275 L540 265 L520 230 Z",
+      path: "M530 165 L590 165 L615 195 L600 235 L565 245 L535 225 Z",
+      labelX: 575,
+      labelY: 200,
     },
     {
       id: "namerica",
       t: "North America",
       b: "Selective cross-border engagement where European execution capability, private-market opportunities, and North American capital or strategic interest may intersect.",
-      cx: 185,
-      cy: 165,
-      rx: 90,
-      ry: 60,
-      path: "M110 130 L260 120 L290 170 L255 215 L140 215 L105 185 Z",
+      path: "M75 80 L160 70 L250 82 L330 105 L350 140 L330 175 L290 200 L220 208 L150 205 L95 185 L65 145 L55 110 Z",
+      labelX: 200,
+      labelY: 140,
     },
     {
       id: "global",
       t: "Select Global Markets",
       b: "Relationship-led engagement in select global markets where Ravencourt's relationship network, advisory capability, and mandate relevance justify involvement.",
-      cx: 750,
-      cy: 230,
-      rx: 80,
-      ry: 65,
-      path: "M700 190 L800 185 L830 230 L790 280 L710 275 L685 230 Z",
+      path: "M680 155 L790 145 L855 175 L875 220 L840 270 L760 280 L695 255 L670 210 Z",
+      labelX: 780,
+      labelY: 215,
     },
   ];
 
@@ -663,34 +655,63 @@ function Footprint() {
           and select global markets. Our operating model is selective by design.
         </p>
 
-        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-[1fr_0.75fr] gap-12 lg:gap-16 items-start">
           {/* Map */}
-          <div className="relative">
+          <div className="relative bg-[oklch(0.955_0.008_85)] border border-[var(--rule)] p-6 lg:p-8">
             <svg
-              viewBox="0 0 1000 420"
+              viewBox="0 0 1000 520"
               className="w-full h-auto"
               role="img"
               aria-label="World map showing Ravencourt Capital operating regions"
             >
               <defs>
                 <radialGradient id="milan-glow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="var(--bronze)" stopOpacity="0.35" />
+                  <stop offset="0%" stopColor="var(--bronze)" stopOpacity="0.45" />
                   <stop offset="100%" stopColor="var(--bronze)" stopOpacity="0" />
                 </radialGradient>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--rule)" strokeWidth="1" opacity="0.5" />
+                </pattern>
               </defs>
 
-              {/* Base landmasses — very subtle */}
-              <g style={{ fill: "var(--rule)", opacity: 0.55 }}>
+              {/* Subtle grid */}
+              <rect width="1000" height="520" fill="url(#grid)" opacity="0.4" />
+
+              {/* Parallels / meridians */}
+              <g stroke="var(--rule)" strokeWidth="1" opacity="0.6">
+                <line x1="0" y1="130" x2="1000" y2="130" />
+                <line x1="0" y1="260" x2="1000" y2="260" />
+                <line x1="0" y1="390" x2="1000" y2="390" />
+                <line x1="250" y1="0" x2="250" y2="520" />
+                <line x1="500" y1="0" x2="500" y2="520" />
+                <line x1="750" y1="0" x2="750" y2="520" />
+              </g>
+
+              {/* Base landmasses — outline only */}
+              <g
+                fill="var(--rule)"
+                stroke="var(--ink-soft)"
+                strokeWidth="1"
+                opacity="0.35"
+              >
                 {/* North America */}
-                <path d="M95 105 L160 95 L215 100 L285 115 L320 135 L310 165 L285 185 L255 205 L220 215 L175 210 L135 205 L105 185 L85 150 Z" />
+                <path d="M55 85 L125 75 L195 80 L265 92 L310 110 L335 135 L325 165 L305 190 L270 208 L215 215 L160 215 L115 205 L80 185 L55 150 L45 115 Z" />
                 {/* South America */}
-                <path d="M235 235 L280 230 L310 245 L315 285 L300 330 L275 360 L255 355 L235 320 L225 280 Z" />
-                {/* Europe / Africa / Middle East */}
-                <path d="M470 90 L545 85 L600 105 L625 140 L620 185 L640 220 L655 265 L640 310 L605 335 L560 330 L530 300 L515 260 L500 220 L480 185 L465 145 Z" />
+                <path d="M245 245 L295 240 L325 260 L335 300 L320 345 L295 380 L270 375 L250 340 L235 295 Z" />
+                {/* Greenland */}
+                <path d="M340 60 L390 55 L410 75 L395 95 L355 90 Z" />
+                {/* Europe */}
+                <path d="M455 95 L480 75 L535 70 L580 85 L595 115 L575 145 L540 158 L500 150 L465 130 Z" />
+                {/* Africa */}
+                <path d="M470 155 L535 155 L570 175 L590 220 L585 275 L565 330 L535 365 L505 360 L485 320 L470 270 L460 215 Z" />
+                {/* Middle East */}
+                <path d="M540 160 L600 165 L630 190 L620 225 L585 235 L555 215 Z" />
                 {/* Asia */}
-                <path d="M620 100 L720 90 L815 105 L865 140 L890 190 L875 235 L840 265 L795 275 L750 265 L710 245 L680 215 L655 180 L635 140 Z" />
+                <path d="M610 75 L720 65 L830 80 L895 115 L925 170 L910 225 L870 260 L815 275 L760 270 L710 250 L675 220 L650 180 L630 135 Z" />
                 {/* Australia */}
-                <path d="M780 310 L835 305 L865 325 L860 355 L830 370 L790 365 L770 340 Z" />
+                <path d="M775 315 L845 310 L880 330 L875 365 L845 385 L800 380 L775 355 Z" />
+                {/* Japan */}
+                <path d="M910 135 L935 125 L945 150 L930 180 L915 170 Z" />
               </g>
 
               {/* Operating region overlays */}
@@ -710,36 +731,28 @@ function Footprint() {
                     onFocus={() => setActive(r.id)}
                     onBlur={() => setActive(null)}
                   >
-                    <ellipse
-                      cx={r.cx}
-                      cy={r.cy}
-                      rx={r.rx}
-                      ry={r.ry}
-                      style={{
-                        fill: isActive ? "var(--bronze)" : "var(--ink)",
-                        opacity: isActive ? 0.2 : 0.12,
-                        transition: "all 300ms ease",
-                      }}
-                    />
                     <path
                       d={r.path}
                       style={{
                         fill: isActive ? "var(--bronze)" : "var(--ink)",
-                        opacity: isActive ? 0.35 : 0.2,
+                        opacity: isActive ? 0.28 : 0.18,
+                        stroke: isActive ? "var(--bronze)" : "var(--ink-soft)",
+                        strokeWidth: isActive ? 2 : 1,
                         transition: "all 300ms ease",
                       }}
                     />
                     <text
-                      x={r.cx}
-                      y={r.cy + 5}
+                      x={r.labelX}
+                      y={r.labelY}
                       textAnchor="middle"
-                      className="font-serif"
                       style={{
                         fill: isActive ? "var(--ink)" : "var(--ink-soft)",
-                        fontSize: 14,
-                        fontWeight: 400,
-                        letterSpacing: "0.04em",
-                        opacity: isActive ? 1 : 0.85,
+                        fontFamily: "var(--font-sans)",
+                        fontSize: 13,
+                        fontWeight: 500,
+                        letterSpacing: "0.06em",
+                        textTransform: "uppercase",
+                        opacity: isActive ? 1 : 0.75,
                         transition: "all 300ms ease",
                         pointerEvents: "none",
                       }}
@@ -752,19 +765,19 @@ function Footprint() {
 
               {/* Milan marker */}
               <g>
-                <circle cx="525" cy="160" r="28" fill="url(#milan-glow)" />
-                <circle cx="525" cy="160" r="5" style={{ fill: "var(--bronze)" }} />
-                <circle cx="525" cy="160" r="9" style={{ fill: "none", stroke: "var(--bronze)", strokeWidth: 1, opacity: 0.6 }} />
+                <circle cx="525" cy="130" r="36" fill="url(#milan-glow)" />
+                <circle cx="525" cy="130" r="6" style={{ fill: "var(--bronze)" }} />
+                <circle cx="525" cy="130" r="11" style={{ fill: "none", stroke: "var(--bronze)", strokeWidth: 1.5, opacity: 0.6 }} />
                 <text
                   x="545"
-                  y="145"
-                  className="font-sans"
+                  y="112"
                   style={{
                     fill: "var(--ink)",
-                    fontSize: 10,
-                    letterSpacing: "0.12em",
+                    fontFamily: "var(--font-sans)",
+                    fontSize: 11,
+                    letterSpacing: "0.14em",
                     textTransform: "uppercase",
-                    fontWeight: 500,
+                    fontWeight: 600,
                   }}
                 >
                   Milan
@@ -779,7 +792,7 @@ function Footprint() {
           </div>
 
           {/* Region legend / detail panel */}
-          <div className="space-y-6">
+          <div className="space-y-5">
             {regions.map((r) => {
               const isActive = active === r.id;
               return (
@@ -806,7 +819,7 @@ function Footprint() {
                   </h3>
                   <div
                     className={`overflow-hidden transition-all duration-300 ${
-                      isActive ? "max-h-96 opacity-100 mt-3" : "max-h-0 opacity-0 mt-0 lg:max-h-0"
+                      isActive ? "max-h-96 opacity-100 mt-3" : "max-h-0 opacity-0 mt-0"
                     }`}
                   >
                     <p className="text-[var(--ink-soft)] leading-relaxed text-sm">{r.b}</p>
@@ -816,7 +829,7 @@ function Footprint() {
             })}
 
             {/* Active detail card (desktop persistent) */}
-            <div className="hidden lg:block mt-8 p-6 bg-[oklch(0.94_0.008_85)] border border-[var(--rule)]">
+            <div className="hidden lg:block mt-6 p-6 bg-[oklch(0.955_0.008_85)] border border-[var(--rule)]">
               {activeRegion ? (
                 <>
                   <p className="eyebrow mb-3">{activeRegion.t}</p>
