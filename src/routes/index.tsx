@@ -616,7 +616,7 @@ function Footprint() {
       b: "Primary market. Coverage across selected European private-market situations involving founder-led companies, fund managers, family offices, searchers, acquisition entrepreneurs, strategic acquirers, and institutional counterparties.",
       path: "M470 118 L485 95 L535 88 L575 105 L585 130 L565 155 L525 162 L490 150 Z",
       labelX: 530,
-      labelY: 130,
+      labelY: 108,
     },
     {
       id: "mena",
