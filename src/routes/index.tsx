@@ -769,8 +769,8 @@ function Footprint() {
                 <circle cx="525" cy="130" r="6" style={{ fill: "var(--bronze)" }} />
                 <circle cx="525" cy="130" r="11" style={{ fill: "none", stroke: "var(--bronze)", strokeWidth: 1.5, opacity: 0.6 }} />
                 <text
-                  x="545"
-                  y="112"
+                  x="550"
+                  y="118"
                   style={{
                     fill: "var(--ink)",
                     fontFamily: "var(--font-sans)",
