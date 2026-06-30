@@ -2,6 +2,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
+import { CookieBanner } from "../components/CookieBanner";
 
 import faviconIco from "../assets/favicons/favicon.ico.asset.json";
 import favicon16 from "../assets/favicons/favicon-16x16.png.asset.json";
@@ -102,6 +103,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <Analytics />
+        <CookieBanner />
         <Scripts />
       </body>
     </html>
