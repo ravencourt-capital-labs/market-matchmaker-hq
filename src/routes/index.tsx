@@ -74,15 +74,6 @@ const TEAM = [
     slug: "saania-shaikh",
   },
   {
-    initials: "KL",
-    name: "Konstantinos Lanaras",
-    role: "Private Markets Coverage Analyst",
-    location: "Luxembourg",
-    linkedin: "https://www.linkedin.com/in/konstantinoslanaras0504/",
-    image: konstantinosImg.url,
-    objectPosition: "50% 50%",
-  },
-  {
     initials: "JZ",
     name: "Joey Zhu",
     role: "FulfillmentOS & Data Pipeline Analyst",
@@ -654,13 +645,8 @@ function Team() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <SectionHeader eyebrow="Team" title="Senior-led, by design." />
-        <div className="grid md:grid-cols-3 gap-x-12 gap-y-16 lg:gap-x-16 lg:gap-y-20">
-          {TEAM.slice(0, 3).map((m) => (
-            <TeamCard key={m.name} m={m} />
-          ))}
-        </div>
-        <div className="mt-16 lg:mt-20 grid md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-16 max-w-3xl mx-auto">
-          {TEAM.slice(3).map((m) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16 lg:gap-x-16 lg:gap-y-20">
+          {TEAM.map((m) => (
             <TeamCard key={m.name} m={m} />
           ))}
         </div>
